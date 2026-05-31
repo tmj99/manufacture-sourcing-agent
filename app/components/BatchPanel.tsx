@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { type BatchSpecResult, type BatchResponse } from "@/app/lib/types";
+import { geoMatch } from "@/app/lib/utils";
+import { exportSpecToExcel, exportAllToExcel } from "@/app/lib/export";
 
 interface SpecRow {
   spec: string;
@@ -26,87 +28,124 @@ const PRESETS: SpecRow[] = [
 const EMPTY: SpecRow = { spec: "", geography: "" };
 const INITIAL_ROWS: SpecRow[] = [...PRESETS, EMPTY, EMPTY];
 
-const STATUS_STYLES = {
-  completed: "bg-green-950 text-green-400",
-  timeout: "bg-amber-950 text-amber-400",
-  error: "bg-red-950 text-red-400",
-};
-
 const inputClass =
   "w-full border border-zinc-700 bg-zinc-800 px-2.5 py-1.5 text-xs text-zinc-100 placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-blue-500";
 
-function ResultCard({ result }: { result: BatchSpecResult }) {
+// ── Per-spec candidate table ─────────────────────────────────────────────────
+
+function CandidateTable({
+  result,
+  selected,
+  onToggle,
+}: {
+  result: BatchSpecResult;
+  selected: Set<number>;
+  onToggle: (i: number) => void;
+}) {
+  if (result.status !== "completed") {
+    return (
+      <p className="py-10 text-center text-xs text-zinc-600">
+        {result.status === "error"
+          ? (result.error ?? "An error occurred.")
+          : "Job exceeded time limit — try again or narrow the spec."}
+      </p>
+    );
+  }
+  if (result.candidates.length === 0) {
+    return (
+      <p className="py-10 text-center text-xs text-zinc-600">
+        No candidates returned.
+      </p>
+    );
+  }
+
+  const maxReached = selected.size >= 2;
+
   return (
-    <div className="flex flex-col gap-3 border border-zinc-800 bg-zinc-900 p-4">
-      {/* Header */}
-      <div className="flex flex-wrap items-start justify-between gap-2">
-        <div className="flex-1">
-          <p className="line-clamp-2 font-mono text-sm font-medium text-zinc-300">
-            {result.spec}
-          </p>
-          {result.geography && (
-            <span className="mt-1 inline-block bg-zinc-800 px-2 py-0.5 text-xs text-zinc-500">
-              {result.geography}
-            </span>
-          )}
-        </div>
-        <div className="flex shrink-0 flex-col items-end gap-1">
-          <span className={`px-2 py-0.5 text-xs font-medium ${STATUS_STYLES[result.status]}`}>
-            {result.status}
-          </span>
-          {result.status === "completed" && (
-            <span className="text-xs text-zinc-600">
-              {result.candidates.length} candidates
-            </span>
-          )}
-        </div>
-      </div>
-
-      {/* Error / timeout */}
-      {result.status !== "completed" && (
-        <p className="text-xs text-zinc-600">
-          {result.status === "timeout"
-            ? "Job exceeded time limit — try again or narrow the spec."
-            : result.error ?? "Unknown error."}
-        </p>
-      )}
-
-      {/* Candidate list */}
-      {result.status === "completed" && result.candidates.length === 0 && (
-        <p className="text-xs text-zinc-600">No candidates returned.</p>
-      )}
-      {result.candidates.length > 0 && (
-        <ul className="flex flex-col gap-3">
-          {result.candidates.map((c, i) => (
-            <li key={i} className="flex flex-col gap-0.5">
-              <div className="flex flex-wrap items-baseline gap-2">
-                <span className="text-sm font-semibold text-zinc-200">{c.name}</span>
-                {c.location && (
-                  <span className="text-xs text-zinc-600">{c.location}</span>
-                )}
-              </div>
-              {c.url && (
-                <a
-                  href={c.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-mono text-xs text-blue-400 hover:underline"
-                >
-                  {c.domain || c.url}
-                </a>
-              )}
-              {c.description && (
-                <p className="line-clamp-2 text-xs leading-relaxed text-zinc-500">
-                  {c.description}
-                </p>
-              )}
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="overflow-x-auto">
+      <table className="w-full border-collapse text-xs">
+        <thead>
+          <tr className="border-b border-zinc-800 text-left text-zinc-500">
+            <th className="w-8 py-2.5 pr-2 font-medium">#</th>
+            <th className="w-6 py-2.5 pr-3 font-medium"></th>
+            <th className="py-2.5 pr-4 font-medium">Company Name</th>
+            <th className="py-2.5 pr-4 font-medium">Website</th>
+            <th className="py-2.5 pr-4 font-medium">Location</th>
+            <th className="w-20 py-2.5 pr-4 font-medium">Geo Match</th>
+            <th className="py-2.5 font-medium">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {result.candidates.map((c, i) => {
+            const isSelected = selected.has(i);
+            const isDisabled = maxReached && !isSelected;
+            const matched = geoMatch(c.location, result.geography);
+            return (
+              <tr
+                key={i}
+                className={`border-b border-zinc-900 transition-colors ${
+                  isSelected ? "bg-blue-950/30" : "hover:bg-zinc-900/40"
+                }`}
+              >
+                <td className="py-2.5 pr-2 text-zinc-600">{i + 1}</td>
+                <td className="py-2.5 pr-3">
+                  <input
+                    type="checkbox"
+                    checked={isSelected}
+                    disabled={isDisabled}
+                    onChange={() => onToggle(i)}
+                    className="cursor-pointer accent-blue-500 disabled:cursor-not-allowed disabled:opacity-25"
+                  />
+                </td>
+                <td className="py-2.5 pr-4 font-medium text-zinc-200">
+                  {c.name || "—"}
+                </td>
+                <td className="py-2.5 pr-4">
+                  {c.url ? (
+                    <a
+                      href={c.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-mono text-blue-400 hover:underline"
+                    >
+                      {c.domain || c.url}
+                    </a>
+                  ) : (
+                    <span className="text-zinc-600">—</span>
+                  )}
+                </td>
+                <td className="py-2.5 pr-4 text-zinc-400">
+                  {c.location || "—"}
+                </td>
+                <td className="py-2.5 pr-4">
+                  {result.geography ? (
+                    matched ? (
+                      <span className="text-green-400">✓</span>
+                    ) : (
+                      <span className="text-zinc-600">?</span>
+                    )
+                  ) : (
+                    <span className="text-zinc-700">—</span>
+                  )}
+                </td>
+                <td className="max-w-xs py-2.5">
+                  <span
+                    className="line-clamp-2 text-zinc-500"
+                    title={c.description}
+                  >
+                    {c.description || "—"}
+                  </span>
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
     </div>
   );
 }
+
+// ── Main panel ───────────────────────────────────────────────────────────────
 
 interface Props {
   onExit: () => void;
@@ -116,9 +155,28 @@ export function BatchPanel({ onExit }: Props) {
   const [rows, setRows] = useState<SpecRow[]>(INITIAL_ROWS);
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<BatchSpecResult[] | null>(null);
+  const [activeTab, setActiveTab] = useState(0);
+  // Per-tab selection state — scaffolded here for Fix 3 (drill-down)
+  const [selections, setSelections] = useState<Set<number>[]>([]);
 
   function setRow(i: number, field: keyof SpecRow, value: string) {
-    setRows((prev) => prev.map((r, j) => (j === i ? { ...r, [field]: value } : r)));
+    setRows((prev) =>
+      prev.map((r, j) => (j === i ? { ...r, [field]: value } : r))
+    );
+  }
+
+  function toggleSelection(tabIdx: number, candidateIdx: number) {
+    setSelections((prev) => {
+      const next = prev.map((s) => new Set(s));
+      const set = next[tabIdx] ?? new Set<number>();
+      if (set.has(candidateIdx)) {
+        set.delete(candidateIdx);
+      } else if (set.size < 2) {
+        set.add(candidateIdx);
+      }
+      next[tabIdx] = set;
+      return next;
+    });
   }
 
   async function handleSubmit(e: React.FormEvent) {
@@ -126,11 +184,12 @@ export function BatchPanel({ onExit }: Props) {
     const anchors = rows
       .filter((r) => r.spec.trim().length >= 10)
       .map((r) => ({ spec: r.spec.trim(), geography: r.geography.trim() }));
-
     if (anchors.length === 0) return;
 
     setLoading(true);
     setResults(null);
+    setActiveTab(0);
+    setSelections([]);
     try {
       const res = await fetch("/api/source/batch", {
         method: "POST",
@@ -139,12 +198,16 @@ export function BatchPanel({ onExit }: Props) {
       });
       const data: BatchResponse = await res.json();
       setResults(data.results);
+      setSelections(data.results.map(() => new Set<number>()));
     } finally {
       setLoading(false);
     }
   }
 
   const activeCount = rows.filter((r) => r.spec.trim().length >= 10).length;
+  const activeSelection = results
+    ? (selections[activeTab] ?? new Set<number>())
+    : new Set<number>();
 
   return (
     <div className="min-h-screen bg-zinc-950">
@@ -156,7 +219,8 @@ export function BatchPanel({ onExit }: Props) {
               Batch Supplier Discovery
             </h1>
             <p className="mt-0.5 text-xs text-zinc-500">
-              Execute search on up to 5 specs in parallel to speed up your sourcing process.
+              Execute search on up to 5 specs in parallel to speed up your
+              sourcing process.
             </p>
           </div>
           <button
@@ -169,7 +233,7 @@ export function BatchPanel({ onExit }: Props) {
         </div>
       </header>
 
-      <div className="mx-auto max-w-4xl px-6 py-8">
+      <div className="mx-auto max-w-6xl px-6 py-8">
         {/* Input form */}
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-3">
@@ -223,14 +287,98 @@ export function BatchPanel({ onExit }: Props) {
         {/* Results */}
         {results && (
           <div className="mt-8">
-            <h2 className="mb-4 text-sm font-semibold text-zinc-400">
-              Results — {results.length} spec{results.length !== 1 ? "s" : ""}
-            </h2>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            {/* Results header */}
+            <div className="mb-3 flex items-center justify-between">
+              <h2 className="text-sm font-semibold text-zinc-400">
+                Results — {results.length} spec{results.length !== 1 ? "s" : ""}
+              </h2>
+              <button
+                type="button"
+                onClick={() => exportAllToExcel(results, results.map(() => null))}
+                className="text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-700 hover:border-zinc-500 px-3 py-1.5 transition-colors"
+              >
+                ↓ Download all specs (.xlsx)
+              </button>
+            </div>
+
+            {/* Tab bar */}
+            <div className="flex overflow-x-auto border-b border-zinc-800">
               {results.map((r, i) => (
-                <ResultCard key={i} result={r} />
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setActiveTab(i)}
+                  className={`flex shrink-0 flex-col gap-0.5 border-b-2 px-4 py-3 text-left transition-colors ${
+                    activeTab === i
+                      ? "border-blue-500 text-zinc-100"
+                      : "border-transparent text-zinc-500 hover:text-zinc-300"
+                  }`}
+                >
+                  <span className="max-w-[220px] truncate text-xs font-medium">
+                    {r.spec.length > 55 ? r.spec.slice(0, 55) + "…" : r.spec}
+                  </span>
+                  <div className="flex items-center gap-2">
+                    {r.geography && (
+                      <span className="text-xs text-zinc-600">
+                        {r.geography}
+                      </span>
+                    )}
+                    <span
+                      className={`text-xs font-medium ${
+                        r.status === "completed"
+                          ? "text-green-400"
+                          : r.status === "error"
+                          ? "text-red-400"
+                          : "text-amber-400"
+                      }`}
+                    >
+                      {r.status === "completed"
+                        ? `${r.candidates.length} candidates`
+                        : r.status}
+                    </span>
+                  </div>
+                </button>
               ))}
             </div>
+
+            {/* Actions bar */}
+            <div className="flex items-center justify-between border-b border-zinc-800 px-1 py-2.5">
+              <p className="text-xs text-zinc-600">
+                {activeSelection.size > 0
+                  ? `${activeSelection.size} selected — deep research coming soon`
+                  : "Select up to 2 companies to deep-research them"}
+              </p>
+              <div className="flex items-center gap-2">
+                {results[activeTab]?.status === "completed" && (
+                  <button
+                    type="button"
+                    onClick={() => exportSpecToExcel(results[activeTab], null)}
+                    className="text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-700 hover:border-zinc-500 px-3 py-1.5 transition-colors"
+                  >
+                    ↓ Download this spec
+                  </button>
+                )}
+                <button
+                  type="button"
+                  disabled
+                  title="Coming soon"
+                  className="cursor-not-allowed rounded bg-zinc-800 px-3 py-1.5 text-xs font-medium text-zinc-600"
+                >
+                  {activeSelection.size > 0
+                    ? `Deep Research (${activeSelection.size})`
+                    : "Deep Research"}
+                </button>
+              </div>
+            </div>
+
+            {/* Active tab table */}
+            {results[activeTab] && (
+              <CandidateTable
+                result={results[activeTab]}
+                selected={activeSelection}
+                onToggle={(i) => toggleSelection(activeTab, i)}
+              />
+            )}
           </div>
         )}
       </div>

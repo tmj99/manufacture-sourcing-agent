@@ -27,3 +27,29 @@ export function languageTag(url: string, title = ""): string {
   if (title && /[^\x00-\x7F]/.test(title)) return "non-ASCII";
   return "";
 }
+
+// Maps geography label tokens (lowercase) to the uppercase TLD codes
+// produced by languageTag(). Used in both BatchPanel and the Excel exporter.
+export const GEO_TLD_MAP: Record<string, string[]> = {
+  mexico: ["MX"],
+  "eastern europe": ["CZ", "PL", "HU", "SK", "RO", "BG", "HR", "RS"],
+  turkey: ["TR"],
+  india: ["IN"],
+  china: ["CN"],
+  "southeast asia": ["VN", "ID", "TH", "MY", "PH"],
+  "south korea": ["KR"],
+  japan: ["JP"],
+};
+
+/** Returns true when a TLD-based location tag confirms membership in the geography string. */
+export function geoMatch(location: string, geography: string): boolean {
+  if (!location || !geography) return false;
+  const loc = location.toUpperCase().trim();
+  const tokens = geography.toLowerCase().split(",").map((t) => t.trim());
+  for (const token of tokens) {
+    const codes = GEO_TLD_MAP[token];
+    if (codes && codes.includes(loc)) return true;
+    if (token.toUpperCase() === loc) return true;
+  }
+  return false;
+}
