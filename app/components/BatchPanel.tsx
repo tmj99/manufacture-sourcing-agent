@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { type BatchSpecResult, type BatchResponse } from "@/app/lib/types";
+import { type BatchSpecResult, type BatchResponse, type AgentData } from "@/app/lib/types";
 import { geoMatch } from "@/app/lib/utils";
 import { exportSpecToExcel, exportAllToExcel } from "@/app/lib/export";
+import { DrillDownResult } from "./DrillDownResult";
 
 interface SpecRow {
   spec: string;
@@ -156,8 +157,9 @@ export function BatchPanel({ onExit }: Props) {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState<BatchSpecResult[] | null>(null);
   const [activeTab, setActiveTab] = useState(0);
-  // Per-tab selection state — scaffolded here for Fix 3 (drill-down)
   const [selections, setSelections] = useState<Set<number>[]>([]);
+  const [drillResults, setDrillResults] = useState<(AgentData | null)[]>([]);
+  const [drillLoading, setDrillLoading] = useState<boolean[]>([]);
 
   function setRow(i: number, field: keyof SpecRow, value: string) {
     setRows((prev) =>
@@ -190,6 +192,8 @@ export function BatchPanel({ onExit }: Props) {
     setResults(null);
     setActiveTab(0);
     setSelections([]);
+    setDrillResults([]);
+    setDrillLoading([]);
     try {
       const res = await fetch("/api/source/batch", {
         method: "POST",
@@ -199,8 +203,42 @@ export function BatchPanel({ onExit }: Props) {
       const data: BatchResponse = await res.json();
       setResults(data.results);
       setSelections(data.results.map(() => new Set<number>()));
+      setDrillResults(data.results.map(() => null));
+      setDrillLoading(data.results.map(() => false));
     } finally {
       setLoading(false);
+    }
+  }
+
+  async function handleDrilldown() {
+    if (!results || activeSelection.size === 0) return;
+    const specResult = results[activeTab];
+    const selectedCandidates = Array.from(activeSelection).map(
+      (i) => specResult.candidates[i]
+    );
+
+    setDrillLoading((prev) => prev.map((v, i) => (i === activeTab ? true : v)));
+    setDrillResults((prev) => prev.map((v, i) => (i === activeTab ? null : v)));
+
+    try {
+      const res = await fetch("/api/source/drilldown", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          anchor: { spec: specResult.spec, geography: specResult.geography },
+          candidates: selectedCandidates.map((c) => ({
+            name: c.name,
+            domain: c.domain,
+            url: c.url,
+          })),
+        }),
+      });
+      const data: AgentData = await res.json();
+      setDrillResults((prev) => prev.map((v, i) => (i === activeTab ? data : v)));
+    } catch {
+      // non-fatal — button returns to ready state
+    } finally {
+      setDrillLoading((prev) => prev.map((v, i) => (i === activeTab ? false : v)));
     }
   }
 
@@ -208,6 +246,8 @@ export function BatchPanel({ onExit }: Props) {
   const activeSelection = results
     ? (selections[activeTab] ?? new Set<number>())
     : new Set<number>();
+  const activeDrillResult = results ? (drillResults[activeTab] ?? null) : null;
+  const activeDrillLoading = results ? (drillLoading[activeTab] ?? false) : false;
 
   return (
     <div className="min-h-screen bg-zinc-950">
@@ -294,7 +334,7 @@ export function BatchPanel({ onExit }: Props) {
               </h2>
               <button
                 type="button"
-                onClick={() => exportAllToExcel(results, results.map(() => null))}
+                onClick={() => exportAllToExcel(results, drillResults)}
                 className="text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-700 hover:border-zinc-500 px-3 py-1.5 transition-colors"
               >
                 ↓ Download all specs (.xlsx)
@@ -345,14 +385,14 @@ export function BatchPanel({ onExit }: Props) {
             <div className="flex items-center justify-between border-b border-zinc-800 px-1 py-2.5">
               <p className="text-xs text-zinc-600">
                 {activeSelection.size > 0
-                  ? `${activeSelection.size} selected — deep research coming soon`
+                  ? `${activeSelection.size} selected`
                   : "Select up to 2 companies to deep-research them"}
               </p>
               <div className="flex items-center gap-2">
                 {results[activeTab]?.status === "completed" && (
                   <button
                     type="button"
-                    onClick={() => exportSpecToExcel(results[activeTab], null)}
+                    onClick={() => exportSpecToExcel(results[activeTab], activeDrillResult)}
                     className="text-xs text-zinc-400 hover:text-zinc-200 border border-zinc-700 hover:border-zinc-500 px-3 py-1.5 transition-colors"
                   >
                     ↓ Download this spec
@@ -360,11 +400,13 @@ export function BatchPanel({ onExit }: Props) {
                 )}
                 <button
                   type="button"
-                  disabled
-                  title="Coming soon"
-                  className="cursor-not-allowed rounded bg-zinc-800 px-3 py-1.5 text-xs font-medium text-zinc-600"
+                  onClick={handleDrilldown}
+                  disabled={activeSelection.size === 0 || activeDrillLoading}
+                  className="rounded bg-blue-700 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-blue-600 disabled:cursor-not-allowed disabled:opacity-40"
                 >
-                  {activeSelection.size > 0
+                  {activeDrillLoading
+                    ? "Researching…"
+                    : activeSelection.size > 0
                     ? `Deep Research (${activeSelection.size})`
                     : "Deep Research"}
                 </button>
@@ -377,6 +419,18 @@ export function BatchPanel({ onExit }: Props) {
                 result={results[activeTab]}
                 selected={activeSelection}
                 onToggle={(i) => toggleSelection(activeTab, i)}
+              />
+            )}
+
+            {/* Drill-down results */}
+            {activeDrillResult && (
+              <DrillDownResult
+                data={activeDrillResult}
+                onClose={() =>
+                  setDrillResults((prev) =>
+                    prev.map((v, i) => (i === activeTab ? null : v))
+                  )
+                }
               />
             )}
           </div>

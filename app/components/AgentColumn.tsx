@@ -13,7 +13,7 @@ const CONFIDENCE: Record<string, string> = {
   low: "bg-red-950 text-red-400",
 };
 
-function SupplierCard({ entry }: { entry: ShortlistEntry }) {
+export function SupplierCard({ entry }: { entry: ShortlistEntry }) {
   return (
     <div className="flex flex-col gap-2.5 border border-zinc-700 bg-zinc-800 p-4">
       {/* Name + confidence */}
