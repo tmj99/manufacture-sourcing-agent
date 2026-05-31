@@ -12,25 +12,25 @@ export function ExaRawColumn({ data }: Props) {
       {/* Header */}
       <div>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-blue-800">Exa neural search</h2>
+          <h2 className="text-sm font-semibold text-blue-400">Exa neural search</h2>
           {nonEnglish > 0 && (
-            <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
+            <span className="bg-blue-950 px-2 py-0.5 text-xs font-medium text-blue-400">
               {nonEnglish} non-English
             </span>
           )}
         </div>
-        <p className="text-xs text-blue-400">Semantic retrieval · same query</p>
+        <p className="text-xs text-zinc-600">Semantic retrieval · same query</p>
       </div>
 
       {/* Query sent verbatim */}
-      <div className="rounded border border-blue-100 bg-blue-50/50 px-3 py-2 text-xs text-zinc-500">
-        <span className="font-medium text-zinc-600">Query: </span>
-        {data.query}
+      <div className="border border-zinc-800 bg-zinc-800 px-3 py-2 text-xs text-zinc-500">
+        <span className="font-medium text-zinc-400">Query: </span>
+        <span className="font-mono">{data.query}</span>
       </div>
 
       {/* Error */}
       {data.error && (
-        <div className="rounded border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-600">
+        <div className="border border-red-900 bg-red-950 px-3 py-2 text-xs text-red-400">
           {data.error}
         </div>
       )}
@@ -44,22 +44,22 @@ export function ExaRawColumn({ data }: Props) {
                 href={r.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-blue-700 hover:underline"
+                className="text-sm font-medium text-blue-400 hover:underline"
               >
                 {r.title || r.url}
               </a>
               {r.language && (
-                <span className="shrink-0 rounded bg-blue-100 px-1.5 py-0.5 text-xs font-medium text-blue-600">
+                <span className="shrink-0 bg-blue-950 px-1.5 py-0.5 text-xs font-medium text-blue-400">
                   {r.language}
                 </span>
               )}
             </div>
-            <p className="text-xs text-zinc-400">
+            <p className="font-mono text-xs text-zinc-600">
               {new URL(r.url).hostname.replace(/^www\./, "")}
-              {r.publishedDate && <> &middot; {r.publishedDate.slice(0, 10)}</>}
+              {r.publishedDate && <> · {r.publishedDate.slice(0, 10)}</>}
             </p>
             {r.highlights[0] && (
-              <p className="rounded bg-blue-50 px-2.5 py-1.5 text-xs leading-relaxed text-zinc-700">
+              <p className="border border-zinc-700 bg-zinc-800 px-2.5 py-1.5 text-xs leading-relaxed text-zinc-300">
                 {r.highlights[0]}
               </p>
             )}
@@ -71,7 +71,7 @@ export function ExaRawColumn({ data }: Props) {
       </ol>
 
       {data.results.length === 0 && !data.error && (
-        <p className="text-xs text-zinc-400">No results.</p>
+        <p className="text-xs text-zinc-600">No results.</p>
       )}
     </div>
   );

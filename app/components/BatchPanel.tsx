@@ -24,38 +24,38 @@ const PRESETS: SpecRow[] = [
 ];
 
 const EMPTY: SpecRow = { spec: "", geography: "" };
-
 const INITIAL_ROWS: SpecRow[] = [...PRESETS, EMPTY, EMPTY];
 
 const STATUS_STYLES = {
-  completed: "bg-green-100 text-green-700",
-  timeout: "bg-amber-100 text-amber-700",
-  error: "bg-red-100 text-red-600",
+  completed: "bg-green-950 text-green-400",
+  timeout: "bg-amber-950 text-amber-400",
+  error: "bg-red-950 text-red-400",
 };
+
+const inputClass =
+  "w-full border border-zinc-700 bg-zinc-800 px-2.5 py-1.5 text-xs text-zinc-100 placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-blue-500";
 
 function ResultCard({ result }: { result: BatchSpecResult }) {
   return (
-    <div className="flex flex-col gap-3 rounded-lg border border-zinc-200 bg-white p-4">
+    <div className="flex flex-col gap-3 border border-zinc-800 bg-zinc-900 p-4">
       {/* Header */}
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="flex-1">
-          <p className="line-clamp-2 text-sm font-medium text-zinc-800">
+          <p className="line-clamp-2 font-mono text-sm font-medium text-zinc-300">
             {result.spec}
           </p>
           {result.geography && (
-            <span className="mt-1 inline-block rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-500">
+            <span className="mt-1 inline-block bg-zinc-800 px-2 py-0.5 text-xs text-zinc-500">
               {result.geography}
             </span>
           )}
         </div>
         <div className="flex shrink-0 flex-col items-end gap-1">
-          <span
-            className={`rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_STYLES[result.status]}`}
-          >
+          <span className={`px-2 py-0.5 text-xs font-medium ${STATUS_STYLES[result.status]}`}>
             {result.status}
           </span>
           {result.status === "completed" && (
-            <span className="text-xs text-zinc-400">
+            <span className="text-xs text-zinc-600">
               {result.candidates.length} candidates
             </span>
           )}
@@ -64,25 +64,25 @@ function ResultCard({ result }: { result: BatchSpecResult }) {
 
       {/* Error / timeout */}
       {result.status !== "completed" && (
-        <p className="text-xs text-zinc-400">
+        <p className="text-xs text-zinc-600">
           {result.status === "timeout"
-            ? "Webset job exceeded 80s — try again or narrow the spec."
+            ? "Job exceeded time limit — try again or narrow the spec."
             : result.error ?? "Unknown error."}
         </p>
       )}
 
       {/* Candidate list */}
       {result.status === "completed" && result.candidates.length === 0 && (
-        <p className="text-xs text-zinc-400">No candidates returned.</p>
+        <p className="text-xs text-zinc-600">No candidates returned.</p>
       )}
       {result.candidates.length > 0 && (
         <ul className="flex flex-col gap-3">
           {result.candidates.map((c, i) => (
             <li key={i} className="flex flex-col gap-0.5">
               <div className="flex flex-wrap items-baseline gap-2">
-                <span className="text-sm font-semibold text-zinc-800">{c.name}</span>
+                <span className="text-sm font-semibold text-zinc-200">{c.name}</span>
                 {c.location && (
-                  <span className="text-xs text-zinc-400">{c.location}</span>
+                  <span className="text-xs text-zinc-600">{c.location}</span>
                 )}
               </div>
               {c.url && (
@@ -90,7 +90,7 @@ function ResultCard({ result }: { result: BatchSpecResult }) {
                   href={c.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-blue-600 hover:underline"
+                  className="font-mono text-xs text-blue-400 hover:underline"
                 >
                   {c.domain || c.url}
                 </a>
@@ -147,12 +147,12 @@ export function BatchPanel({ onExit }: Props) {
   const activeCount = rows.filter((r) => r.spec.trim().length >= 10).length;
 
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen bg-zinc-950">
       {/* Header */}
-      <header className="border-b border-zinc-200 bg-white px-6 py-4">
+      <header className="border-b border-zinc-800 bg-black px-6 py-4">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
           <div>
-            <h1 className="text-base font-semibold text-zinc-900">
+            <h1 className="text-base font-semibold text-zinc-100">
               Batch Supplier Discovery
             </h1>
             <p className="mt-0.5 text-xs text-zinc-500">
@@ -162,7 +162,7 @@ export function BatchPanel({ onExit }: Props) {
           <button
             type="button"
             onClick={onExit}
-            className="text-xs text-zinc-400 hover:text-zinc-600"
+            className="text-xs text-zinc-600 hover:text-zinc-400"
           >
             ← Single spec
           </button>
@@ -176,13 +176,13 @@ export function BatchPanel({ onExit }: Props) {
             {rows.map((row, i) => (
               <div
                 key={i}
-                className="grid grid-cols-1 gap-2 rounded-lg border border-zinc-200 bg-white p-3 sm:grid-cols-3"
+                className="grid grid-cols-1 gap-2 border border-zinc-800 bg-zinc-900 p-3 sm:grid-cols-3"
               >
                 <div className="sm:col-span-2">
                   <label className="mb-1 block text-xs font-medium text-zinc-500">
                     Spec {i + 1}
                     {i < 3 && (
-                      <span className="ml-1 text-zinc-300">(preset)</span>
+                      <span className="ml-1 text-zinc-700">(preset)</span>
                     )}
                   </label>
                   <textarea
@@ -190,7 +190,7 @@ export function BatchPanel({ onExit }: Props) {
                     value={row.spec}
                     onChange={(e) => setRow(i, "spec", e.target.value)}
                     placeholder="Describe the capability requirement…"
-                    className="w-full rounded border border-zinc-200 px-2.5 py-1.5 text-xs text-zinc-800 placeholder-zinc-300 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                    className={`${inputClass} font-mono`}
                   />
                 </div>
                 <div>
@@ -202,7 +202,7 @@ export function BatchPanel({ onExit }: Props) {
                     value={row.geography}
                     onChange={(e) => setRow(i, "geography", e.target.value)}
                     placeholder="e.g. Mexico, Eastern Europe"
-                    className="w-full rounded border border-zinc-200 px-2.5 py-1.5 text-xs text-zinc-800 placeholder-zinc-300 focus:outline-none focus:ring-1 focus:ring-blue-400"
+                    className={inputClass}
                   />
                 </div>
               </div>
@@ -212,7 +212,7 @@ export function BatchPanel({ onExit }: Props) {
           <button
             type="submit"
             disabled={loading || activeCount === 0}
-            className="rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+            className="bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-40"
           >
             {loading
               ? `Running ${activeCount} spec${activeCount > 1 ? "s" : ""}…`
@@ -223,7 +223,7 @@ export function BatchPanel({ onExit }: Props) {
         {/* Results */}
         {results && (
           <div className="mt-8">
-            <h2 className="mb-4 text-sm font-semibold text-zinc-700">
+            <h2 className="mb-4 text-sm font-semibold text-zinc-400">
               Results — {results.length} spec{results.length !== 1 ? "s" : ""}
             </h2>
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

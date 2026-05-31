@@ -18,7 +18,6 @@ export default function Home() {
   const [agentData, setAgentData] = useState<AgentData | null>(null);
   const [hasResult, setHasResult] = useState(false);
   const [batchMode, setBatchMode] = useState(false);
-  // Increment on each submit to reset the AgentProgress timer.
   const submissionId = useRef(0);
   const [submissionKey, setSubmissionKey] = useState(0);
 
@@ -37,7 +36,6 @@ export default function Home() {
     const body = JSON.stringify(anchor);
     const headers = { "Content-Type": "application/json" };
 
-    // Baseline (Google + Exa raw) — resolves in ~3–5s
     fetch("/api/source", { method: "POST", headers, body })
       .then((r) => r.json())
       .then((data) => {
@@ -47,7 +45,6 @@ export default function Home() {
       })
       .catch(() => setBaselineLoading(false));
 
-    // Agent — resolves in ~20–40s, independently
     fetch("/api/source/agent", { method: "POST", headers, body })
       .then((r) => r.json())
       .then((data) => {
@@ -62,11 +59,11 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-zinc-50">
+    <div className="min-h-screen bg-zinc-950">
       {/* Header */}
-      <header className="border-b border-zinc-200 bg-white px-6 py-4">
+      <header className="border-b border-zinc-800 bg-black px-6 py-4">
         <div className="mx-auto max-w-7xl">
-          <h1 className="text-base font-semibold text-zinc-900">
+          <h1 className="text-base font-semibold text-zinc-100">
             Manufacture Sourcing Agent
           </h1>
           <p className="mt-0.5 text-xs text-zinc-500">
@@ -78,11 +75,10 @@ export default function Home() {
       {/* Form */}
       <div className="mx-auto max-w-2xl px-6 py-8">
         <SpecForm onSubmit={handleSubmit} loading={loading} />
-        {/* Batch mode toggle — intentionally subtle */}
         <button
           type="button"
           onClick={() => setBatchMode(true)}
-          className="mt-2 text-xs text-zinc-300 hover:text-zinc-400"
+          className="mt-2 text-xs text-zinc-700 hover:text-zinc-500"
         >
           ↓ Batch mode
         </button>
@@ -94,8 +90,8 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
 
             {/* Left — Google baseline */}
-            <div className="overflow-hidden rounded-lg border border-zinc-200 bg-white">
-              <div className="border-t-4 border-t-zinc-300 p-5">
+            <div className="overflow-hidden border border-zinc-800 bg-zinc-900">
+              <div className="border-t-2 border-t-zinc-600 p-5">
                 {baselineLoading ? (
                   <ColumnSkeleton />
                 ) : googleData ? (
@@ -105,8 +101,8 @@ export default function Home() {
             </div>
 
             {/* Center — Exa raw */}
-            <div className="overflow-hidden rounded-lg border border-blue-100 bg-white">
-              <div className="border-t-4 border-t-blue-400 p-5">
+            <div className="overflow-hidden border border-zinc-800 bg-zinc-900">
+              <div className="border-t-2 border-t-blue-500 p-5">
                 {baselineLoading ? (
                   <ColumnSkeleton tint="blue" />
                 ) : exaRawData ? (
@@ -116,8 +112,8 @@ export default function Home() {
             </div>
 
             {/* Right — Exa agent */}
-            <div className="overflow-hidden rounded-lg border border-purple-100 bg-white shadow-sm">
-              <div className="border-t-4 border-t-purple-500 p-5">
+            <div className="overflow-hidden border border-zinc-800 bg-zinc-900">
+              <div className="border-t-2 border-t-purple-500 p-5">
                 {agentLoading ? (
                   <AgentProgress key={submissionKey} />
                 ) : agentData ? (
@@ -134,18 +130,18 @@ export default function Home() {
 }
 
 function ColumnSkeleton({ tint }: { tint?: "blue" }) {
-  const base = tint === "blue" ? "bg-blue-100" : "bg-zinc-200";
-  const light = tint === "blue" ? "bg-blue-50" : "bg-zinc-100";
+  const base = tint === "blue" ? "bg-blue-900/30" : "bg-zinc-800";
+  const light = tint === "blue" ? "bg-blue-900/20" : "bg-zinc-800/60";
   return (
     <div className="flex flex-col gap-3 animate-pulse">
-      <div className={`h-4 w-28 rounded ${base}`} />
-      <div className={`h-2 w-20 rounded ${light}`} />
-      <div className={`h-8 rounded ${light}`} />
+      <div className={`h-4 w-28 ${base}`} />
+      <div className={`h-2 w-20 ${light}`} />
+      <div className={`h-8 ${light}`} />
       {[...Array(5)].map((_, i) => (
         <div key={i} className="flex flex-col gap-1.5">
-          <div className={`h-3 w-3/4 rounded ${base}`} />
-          <div className={`h-2 w-1/2 rounded ${light}`} />
-          <div className={`h-2 w-full rounded ${light}`} />
+          <div className={`h-3 w-3/4 ${base}`} />
+          <div className={`h-2 w-1/2 ${light}`} />
+          <div className={`h-2 w-full ${light}`} />
         </div>
       ))}
     </div>

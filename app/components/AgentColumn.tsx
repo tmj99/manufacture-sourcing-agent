@@ -8,33 +8,33 @@ interface Props {
 }
 
 const CONFIDENCE: Record<string, string> = {
-  high: "bg-green-100 text-green-700",
-  moderate: "bg-amber-100 text-amber-700",
-  low: "bg-red-100 text-red-600",
+  high: "bg-green-950 text-green-400",
+  moderate: "bg-amber-950 text-amber-400",
+  low: "bg-red-950 text-red-400",
 };
 
 function SupplierCard({ entry }: { entry: ShortlistEntry }) {
   return (
-    <div className="flex flex-col gap-2.5 rounded-lg border border-purple-100 bg-purple-50/30 p-4">
+    <div className="flex flex-col gap-2.5 border border-zinc-700 bg-zinc-800 p-4">
       {/* Name + confidence */}
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
-          <p className="text-sm font-semibold text-zinc-900">{entry.supplierName}</p>
+          <p className="text-sm font-semibold text-zinc-100">{entry.supplierName}</p>
           <a
             href={`https://${entry.primaryDomain}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs text-blue-600 hover:underline"
+            className="font-mono text-xs text-blue-400 hover:underline"
           >
             {entry.primaryDomain}
           </a>
         </div>
         <div className="flex flex-wrap gap-1.5">
-          <span className={`rounded-full px-2 py-0.5 text-xs font-semibold ${CONFIDENCE[entry.matchConfidence] ?? CONFIDENCE.low}`}>
+          <span className={`px-2 py-0.5 text-xs font-semibold ${CONFIDENCE[entry.matchConfidence] ?? CONFIDENCE.low}`}>
             {entry.matchConfidence}
           </span>
           {entry.languageOfEvidence && entry.languageOfEvidence !== "English" && (
-            <span className="rounded-full bg-blue-100 px-2 py-0.5 text-xs font-medium text-blue-700">
+            <span className="bg-blue-950 px-2 py-0.5 text-xs font-medium text-blue-400">
               {entry.languageOfEvidence}
             </span>
           )}
@@ -52,7 +52,7 @@ function SupplierCard({ entry }: { entry: ShortlistEntry }) {
           <p className="text-xs font-medium text-zinc-500">Capabilities matched</p>
           <div className="flex flex-wrap gap-1">
             {entry.capabilitiesMatched.map((c, i) => (
-              <span key={i} className="rounded bg-blue-50 px-2 py-0.5 text-xs text-blue-800">
+              <span key={i} className="bg-blue-950 px-2 py-0.5 text-xs text-blue-400">
                 {c}
               </span>
             ))}
@@ -66,7 +66,7 @@ function SupplierCard({ entry }: { entry: ShortlistEntry }) {
           <p className="text-xs font-medium text-zinc-500">Certifications evidenced</p>
           <div className="flex flex-wrap gap-1">
             {entry.certificationsFound.map((c, i) => (
-              <span key={i} className="rounded bg-green-50 px-2 py-0.5 text-xs font-semibold text-green-700">
+              <span key={i} className="bg-green-950 px-2 py-0.5 text-xs font-semibold text-green-400">
                 {c}
               </span>
             ))}
@@ -80,7 +80,7 @@ function SupplierCard({ entry }: { entry: ShortlistEntry }) {
           <p className="text-xs font-medium text-zinc-500">Customer references</p>
           <div className="flex flex-wrap gap-1">
             {entry.customerReferencesFound.map((r, i) => (
-              <span key={i} className="rounded bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700">
+              <span key={i} className="bg-zinc-700 px-2 py-0.5 text-xs text-zinc-300">
                 {r}
               </span>
             ))}
@@ -98,7 +98,7 @@ function SupplierCard({ entry }: { entry: ShortlistEntry }) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="truncate text-xs text-blue-600 hover:underline"
+              className="truncate font-mono text-xs text-blue-400 hover:underline"
             >
               {url.replace(/^https?:\/\/(www\.)?/, "").slice(0, 65)}
             </a>
@@ -108,10 +108,10 @@ function SupplierCard({ entry }: { entry: ShortlistEntry }) {
 
       {/* Gaps */}
       {entry.gaps.length > 0 && (
-        <div className="flex flex-col gap-0.5 rounded border border-zinc-200 bg-white px-2.5 py-2">
-          <p className="text-xs font-medium text-zinc-400">Gaps · next analyst steps</p>
+        <div className="flex flex-col gap-0.5 border border-zinc-700 bg-zinc-900 px-2.5 py-2">
+          <p className="text-xs font-medium text-zinc-500">Gaps · next analyst steps</p>
           {entry.gaps.map((g, i) => (
-            <p key={i} className="text-xs text-zinc-400">⚠ {g}</p>
+            <p key={i} className="text-xs text-zinc-600">⚠ {g}</p>
           ))}
         </div>
       )}
@@ -127,38 +127,38 @@ export function AgentColumn({ data }: Props) {
       {/* Header */}
       <div>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-purple-800">Exa sourcing agent</h2>
-          <span className="rounded-full bg-purple-100 px-2 py-0.5 text-xs font-medium text-purple-700">
+          <h2 className="text-sm font-semibold text-purple-400">Exa sourcing agent</h2>
+          <span className="bg-purple-950 px-2 py-0.5 text-xs font-medium text-purple-400">
             {data.shortlist.length} candidates
           </span>
         </div>
-        <p className="text-xs text-purple-400">Decomposes → searches → verifies → synthesizes</p>
+        <p className="text-xs text-zinc-600">Decomposes → searches → verifies → synthesizes</p>
       </div>
 
       {data.degraded && (
-        <div className="rounded border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-700">
+        <div className="border border-amber-900 bg-amber-950 px-3 py-2 text-xs text-amber-400">
           Synthesis step failed — showing raw candidates.
         </div>
       )}
       {data.error && (
-        <div className="rounded border border-red-200 bg-red-50 px-3 py-2 text-xs text-red-600">
+        <div className="border border-red-900 bg-red-950 px-3 py-2 text-xs text-red-400">
           {data.error}
         </div>
       )}
 
       {/* Agent trace — collapsible */}
-      <div className="rounded border border-purple-100 bg-purple-50/40">
+      <div className="border border-zinc-700 bg-zinc-800">
         <button
           type="button"
           onClick={() => setTraceOpen((v) => !v)}
           className="flex w-full items-center justify-between px-3 py-2 text-left"
         >
-          <span className="text-xs font-medium text-purple-700">Agent trace</span>
-          <span className="text-xs text-purple-400">{traceOpen ? "▾" : "▸"}</span>
+          <span className="text-xs font-medium text-purple-400">Agent trace</span>
+          <span className="text-xs text-zinc-600">{traceOpen ? "▾" : "▸"}</span>
         </button>
         {traceOpen && (
-          <div className="flex flex-col gap-1.5 border-t border-purple-100 px-3 py-2">
-            <p className="text-xs text-zinc-500">
+          <div className="flex flex-col gap-1.5 border-t border-zinc-700 px-3 py-2">
+            <p className="font-mono text-xs text-zinc-500">
               <span className="font-medium">Pipeline:</span>{" "}
               {data.agentTrace.totalCandidatesRetrieved} retrieved →{" "}
               {data.agentTrace.dedupedCandidates} deduped →{" "}
@@ -167,7 +167,7 @@ export function AgentColumn({ data }: Props) {
             <p className="text-xs font-medium text-zinc-500">Sub-queries:</p>
             <ol className="flex flex-col gap-0.5">
               {data.agentTrace.subQueriesFired.map((q, i) => (
-                <li key={i} className="text-xs text-zinc-500">
+                <li key={i} className="font-mono text-xs text-zinc-500">
                   {i + 1}. {q}
                 </li>
               ))}
@@ -184,7 +184,7 @@ export function AgentColumn({ data }: Props) {
       </div>
 
       {data.shortlist.length === 0 && !data.error && (
-        <p className="text-xs text-zinc-400">No candidates returned.</p>
+        <p className="text-xs text-zinc-600">No candidates returned.</p>
       )}
     </div>
   );

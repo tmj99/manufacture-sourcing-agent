@@ -46,6 +46,9 @@ const EMPTY: Anchor = {
   excludeDomains: "",
 };
 
+const inputClass =
+  "w-full border border-zinc-700 bg-zinc-800 px-3 py-2 text-sm text-zinc-100 placeholder-zinc-600 focus:outline-none focus:ring-1 focus:ring-blue-500";
+
 interface Props {
   onSubmit: (anchor: Anchor) => void;
   loading: boolean;
@@ -90,7 +93,7 @@ export function SpecForm({ onSubmit, loading }: Props) {
             key={p.label}
             type="button"
             onClick={() => applyPreset(p)}
-            className="rounded-full border border-zinc-300 bg-white px-3 py-1 text-sm text-zinc-700 transition-colors hover:border-zinc-500 hover:bg-zinc-50"
+            className="border border-zinc-700 bg-transparent px-3 py-1 text-sm text-zinc-400 transition-colors hover:border-zinc-500 hover:text-zinc-300"
           >
             {p.label}
           </button>
@@ -99,7 +102,7 @@ export function SpecForm({ onSubmit, loading }: Props) {
 
       {/* Spec */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-zinc-700">
+        <label className="text-sm font-medium text-zinc-400">
           Sourcing spec <span className="text-red-500">*</span>
         </label>
         <textarea
@@ -107,9 +110,7 @@ export function SpecForm({ onSubmit, loading }: Props) {
           onChange={(e) => set("spec", e.target.value)}
           placeholder="e.g. AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg"
           rows={3}
-          className={`w-full rounded-md border px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500 ${
-            errors.spec ? "border-red-400" : "border-zinc-300"
-          }`}
+          className={`${inputClass} font-mono ${errors.spec ? "border-red-500" : ""}`}
         />
         {errors.spec && (
           <p className="text-xs text-red-500">{errors.spec}</p>
@@ -119,45 +120,45 @@ export function SpecForm({ onSubmit, loading }: Props) {
       {/* Geography + Certifications */}
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-medium text-zinc-700">
+          <label className="text-sm font-medium text-zinc-400">
             Geography{" "}
-            <span className="font-normal text-zinc-400">(optional)</span>
+            <span className="font-normal text-zinc-600">(optional)</span>
           </label>
           <input
             type="text"
             value={fields.geography}
             onChange={(e) => set("geography", e.target.value)}
             placeholder="e.g. Mexico, Eastern Europe"
-            className="rounded-md border border-zinc-300 px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={inputClass}
           />
         </div>
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-medium text-zinc-700">
+          <label className="text-sm font-medium text-zinc-400">
             Certifications{" "}
-            <span className="font-normal text-zinc-400">(optional)</span>
+            <span className="font-normal text-zinc-600">(optional)</span>
           </label>
           <input
             type="text"
             value={fields.certifications}
             onChange={(e) => set("certifications", e.target.value)}
             placeholder="e.g. AS9100, NADCAP, ITAR"
-            className="rounded-md border border-zinc-300 px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={inputClass}
           />
         </div>
       </div>
 
       {/* Volume range */}
       <div className="flex flex-col gap-1">
-        <label className="text-sm font-medium text-zinc-700">
+        <label className="text-sm font-medium text-zinc-400">
           Volume range{" "}
-          <span className="font-normal text-zinc-400">(optional)</span>
+          <span className="font-normal text-zinc-600">(optional)</span>
         </label>
         <input
           type="text"
           value={fields.volumeRange}
           onChange={(e) => set("volumeRange", e.target.value)}
           placeholder="e.g. 1,000–10,000 units / month"
-          className="rounded-md border border-zinc-300 px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className={inputClass}
         />
       </div>
 
@@ -165,25 +166,25 @@ export function SpecForm({ onSubmit, loading }: Props) {
       <button
         type="button"
         onClick={() => setShowAdvanced((v) => !v)}
-        className="w-fit text-xs text-zinc-400 hover:text-zinc-600"
+        className="w-fit text-xs text-zinc-600 hover:text-zinc-400"
       >
         {showAdvanced ? "▾ Hide advanced" : "▸ Advanced options"}
       </button>
 
       {showAdvanced && (
         <div className="flex flex-col gap-1">
-          <label className="text-sm font-medium text-zinc-700">
+          <label className="text-sm font-medium text-zinc-400">
             Exclude domains{" "}
-            <span className="font-normal text-zinc-400">(optional)</span>
+            <span className="font-normal text-zinc-600">(optional)</span>
           </label>
           <input
             type="text"
             value={fields.excludeDomains}
             onChange={(e) => set("excludeDomains", e.target.value)}
             placeholder="e.g. thomasnet.com, industrialnet.com"
-            className="rounded-md border border-zinc-300 px-3 py-2 text-sm text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className={inputClass}
           />
-          <p className="text-xs text-zinc-400">
+          <p className="text-xs text-zinc-600">
             Comma-separated. Use to force novel discovery beyond known directories.
           </p>
         </div>
@@ -193,7 +194,7 @@ export function SpecForm({ onSubmit, loading }: Props) {
       <button
         type="submit"
         disabled={loading}
-        className="w-full rounded-md bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+        className="w-full bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-40"
       >
         {loading ? "Searching…" : "Find suppliers"}
       </button>

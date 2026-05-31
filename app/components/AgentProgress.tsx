@@ -9,7 +9,6 @@ const STEPS = [
   { label: "Synthesizing shortlist", ms: 24000 },
 ];
 
-// key prop should change on every new submission to reset timers.
 export function AgentProgress() {
   const [current, setCurrent] = useState(0);
 
@@ -22,8 +21,8 @@ export function AgentProgress() {
 
   return (
     <div className="flex flex-col gap-3">
-      <h2 className="text-sm font-semibold text-purple-800">Exa sourcing agent</h2>
-      <p className="text-xs text-zinc-400">
+      <h2 className="text-sm font-semibold text-purple-400">Exa sourcing agent</h2>
+      <p className="text-xs text-zinc-600">
         Decomposes → searches → verifies → synthesizes
       </p>
       <div className="mt-2 flex flex-col gap-3">
@@ -34,20 +33,20 @@ export function AgentProgress() {
             <div key={label} className="flex items-center gap-3">
               <div className="flex h-5 w-5 shrink-0 items-center justify-center">
                 {done ? (
-                  <span className="text-sm text-green-500">✓</span>
+                  <span className="text-sm text-green-400">✓</span>
                 ) : active ? (
-                  <span className="h-3 w-3 animate-spin rounded-full border-2 border-purple-300 border-t-purple-600" />
+                  <span className="h-3 w-3 animate-spin border-2 border-zinc-700 border-t-purple-400" />
                 ) : (
-                  <span className="h-2 w-2 rounded-full bg-zinc-200" />
+                  <span className="h-2 w-2 bg-zinc-700" />
                 )}
               </div>
               <span
                 className={`text-xs ${
                   done
-                    ? "text-green-600"
+                    ? "text-green-400"
                     : active
-                    ? "font-medium text-purple-700"
-                    : "text-zinc-300"
+                    ? "font-medium text-purple-400"
+                    : "text-zinc-700"
                 }`}
               >
                 {label}
@@ -56,7 +55,7 @@ export function AgentProgress() {
           );
         })}
       </div>
-      <p className="mt-4 text-xs text-zinc-400">
+      <p className="mt-4 text-xs text-zinc-600">
         Firing ~15 API calls in sequence…
       </p>
     </div>
