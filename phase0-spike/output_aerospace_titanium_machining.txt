@@ -1,0 +1,217 @@
+================================================================================
+SPEC KEY : aerospace_titanium_machining
+QUERY    : AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+
+[1] Aerospace CNC Machining Tijuana & Mexicali - - Baja Supplies
+    https://bajasupplies.com/aerospace-cnc-machiningin-tijuana-mexicali/
+    Snippet : Precision aerospace components from AS9100 certified shops in Mexico. Aluminum, titanium, Inconel, and stainless steel, with full material ...
+
+[2] ABT Mexico | CNC machining | Turning | Sheet Metal
+    https://abtmexico.com/
+    Snippet : At ABT Manufacturing Service, we bring together CNC machining, sheet metal fabrication, mechanical design, and dimensional inspection all under one roof.
+
+[3] AS9100-Certified CNC Machining Specialists | Winslow Automatics
+    https://www.winslowautomatics.com/as9100-certified-cnc-machining-specialis
+    Snippet : Winslow Automatics Inc. is an AS9100-certified CNC machining specialist providing precision CNC milling, CNC turning, and contract manufacturing services for ...
+
+[4] Titanium Forging Services | AS9100 Co-Owned & Operated Foundry
+    https://www.forcebeyond.com/titanium-forging/
+    Snippet : ForceBeyond is a Tier-1.5 manufacturing partner specializing in high-integrity Titanium Forging for aerospace, defense, and medical sectors.
+
+[5] Aerospace CNC Machining USA | AS9100 Rev D Certified Supplier
+    https://ne-xtusa.com/aerospace/
+    Snippet : We offer extensive Aerospace CNC machining services throughout the USA from Connecticut. From Titanium & Inconel parts to assembly solutions.
+
+[6] Aerospace CNC Machining | AS9100 Certified, ITAR Registered
+    https://hppi.com/aerospace-cnc-machining
+    Snippet : Precision aerospace CNC machining to support low volume and high volume production needs. Hirsh is AS9100 certified and ITAR registered. Get a Quote today.
+
+[7] Precision Sheet Metal & CNC Machining Services | PARPRO
+    https://parpro.com/precision-machining/
+    Snippet : We offer a full range of precision machining services - CNC milling and turning creating custom manufactured parts to serve any of your industrial needs.
+
+[8] AS9100D Aerospace CNC Machining - Large-Format & 5-Axis
+    https://www.borgdesign.com/industries/aerospace-industry-cnc-machining/
+    Snippet : AS9100D and CMMC Level 2 certified aerospace CNC machining in Massachusetts. Precision machining, aerospace prototypes, titanium machining.
+
+[9] CNC Machining Titanium - - AIXI Hardware
+    https://www.aixihardware.com/es/cnc-machining-titanium/
+    Snippet : Titanium CNC Machining Service Supplier – AIXI. Titanium alloy is light in weight but high in strength, high-temperature resistance, and chemical corrosion ...
+
+[10] Titanium Machining Services for Aerospace Defense and Space
+    https://www.intrexcorp.com/titanium-machining/
+    Snippet : Intrex Aerospace offers precision titanium machining services for aerospace defense and space. Our facilities are both ISO 9001 and AS9100.
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+
+[1] PCNC — Precision CNC Machining [non-ASCII]
+    https://aeronc.com/
+    Published : 
+    Highlight : PCNC — Precision CNC Machining
+
+✕
+
+↑
+
+AS9100 Rev D · Nadcap Merit · Est. 1993
+
+# Precision Machining Excellence
+
+// Procesos Control Numérico Computarizado
+
+High-precision CNC machining for aerospace, automotive and industrial sectors. 30+ years delivering mission-critical components from Toluca, Mé
+    Summary   : Answer: Yes, this supplier matches high-precision aerospace/industrial CNC needs with several key capabilities, certifications, and geographic reach evidenced.
+
+Capabilities
+- High-precision CNC machining for aerospace, automotive, and industrial sectors.
+- Experience manufacturing mission-critical components.
+- CNC lathe machining capability (implied by history with Fisher Controls and broader pr
+
+[2] Sonora's Titanium Anchor: The CPP Foundry Blueprint | Retail Logistics MX
+    https://retaillogisticsmx.com/sonoras-titanium-anchor-cpp-foundry-blueprint-strategy/
+    Published : 2026-04-08T07:54:07.000Z
+    Highlight : Sonora's Titanium Anchor: The CPP Foundry Blueprint | Retail Logistics MX
+
+The Everest Group’s foundational site selection for a single 120,000 square foot facility in Guaymas crossed a threshold, introducing North America’s first major independent titanium casting capability outside the established
+    Summary   : Summary:
+
+- What the article describes: The CPP (Consolidated Precision Products) campus in Sonora, anchored by a 120,000 sq ft facility in Guaymas, marks North America’s first major independent titanium casting capability outside the traditional aerospace oligopoly. Originating with Pacific Cast Technologies, this site is presented as a strategic asset to re-shore high-value aerospace/metallurgy 
+
+[3] Custom Titanium Machining & Fabrication | Build to Print
+    https://suppliertitanium.com/product/custom-titanium-products-manufactured-to-your-drawings/
+    Published : 2025-10-27T13:01:01.000Z
+    Highlight : Custom Titanium Machining & Fabrication | Build to Print
+
+# Custom Titanium Products (Manufactured to Your Drawings)
+
+When standard catalogs fall short of your engineering requirements, we leverage over a decade of titanium metallurgy expertise to transform your CAD drawings into high-precision real
+    Summary   : Summary:
+
+- Capabilities evidenced: Custom titanium machining and fabrication (Build-to-Print) with core capabilities including 5-axis CNC, welding, forging, sheet metal, and heat treatment. Ability to handle single prototypes to high-volume production. Free DFM review and CMM inspection with EN 10204 3.1 MTC. Materials listed include multiple titanium grades (Grade 1, 2, 3, 4, 5, 7, 9, 12, 23, 24
+
+[4] Radii - High-Precision CNC Machining in Mexico | IATF 16949 & AS9100 [MX]
+    https://www.radii.com.mx/en/capabilities/cnc
+    Published : 
+    Highlight : Radii - High-Precision CNC Machining in Mexico | IATF 16949 & AS9100
+
+CAPABILITIES
+
+# High-Precision CNC Machining in Mexico
+
+Tolerances from ±0.005mm on 5-axis milling and turning. CMM dimensional verification. Surface finishes from Ra 0.8. Partner network with IATF 16949 & AS9100 certification for
+    Summary   : Summary:
+
+- Capabilities: High-precision CNC machining in Mexico with tolerances down to ±0.005 mm on 5-axis milling and turning. CMM dimensional verification and surface finishes to Ra 0.8.
+- Certifications: IATF 16949 and AS9100 certified, indicating automotive and aerospace quality systems.
+- Geographic reach: Based in Mexico with capability to serve automotive and aerospace sectors; no explici
+
+[5] Kisentra - Engineering & Manufacturing Solutions | From Concept to Production
+    https://www.kisentraglobal.com/industries/aerospace-defence
+    Published : 
+    Highlight : Kisentra - Engineering & Manufacturing Solutions | From Concept to Production
+
+Welcome to Kisentra Global Pvt. Ltd. - Transforming businesses with innovative technology solutions 🚀 Learn more
+
+Aerospace & Defense
+
+# EngineeringMission-CriticalExcellence
+
+Trusted aerospace manufacturing partner deliv
+    Summary   : Summary:
+
+- Capabilities:
+  - 5-axis CNC machining
+  - Precision assembly
+  - CMM inspection
+  - Exotic alloy expertise
+  - Aerostructures and flight-critical components manufacturing
+
+- Certifications / Compliance:
+  - AS9100D (Aerospace QMS)
+  - NADCAP accreditation (special processes)
+  - ITAR compliance
+  - ISO 9001 (Quality Management)
+
+- Geographic reach:
+  - The page does not specify geogra
+
+[6] Custom Titanium Parts Manufacturing - PartsMFGX
+    https://parts-mfg.com/custom-titanium-parts/
+    Published : 2025-06-30T15:00:56.000Z
+    Highlight : Custom Titanium Parts Manufacturing - PartsMFGX
+
+# Custom Titanium Parts Manufacturing
+
+Precision CNC machining services for high-performance titanium components. From aerospace to medical applications, we deliver exceptional quality with 12 years of manufacturing expertise.
+
+12+
+
+Years Experience
+
+
+    Summary   : Yes, PartsMFGX matches the spec in several key areas. Evidence from the page:
+
+Capabilities
+- Precision CNC machining for high-performance titanium components, including Grade 1–5 titanium alloys.
+- Advanced 5-axis CNC machining centers with specialized tooling for titanium, delivering precise geometry and high-quality surface finishes.
+- Tight tolerances: ±0.005″.
+- Broad application experience: 
+
+[7] Aerospace CNC Machining | Specialty Machine
+    https://www.specialtymachinelp.com/industries/aerospace-cnc-machining/
+    Published : 2026-04-24T14:16:59.000Z
+    Highlight : Aerospace CNC Machining | Specialty Machine
+
+# AEROSPACE CNC MACHINING
+
+##### For over 50 years, Specialty Machine has been a trusted partner to the aerospace and defense industry, delivering mission-critical components that demand absolute precision and unwavering reliability.
+
+##### Our Capabiliti
+    Summary   : Summary:
+
+- Supplier: Specialty Machine (Specialty Machine LP)
+- Industry focus: Aerospace and defense; over 50 years of experience
+- Capabilities evidenced:
+  - CNC machining for flight-critical components
+  - Precision manufacturing with emphasis on absolute precision, reliability, and zero-defect parts
+  - Capability to handle complex aerospace components from rapid prototyping to full producti
+
+[8] MESIT machinery, a.s.
+    https://mesitmachining.com/
+    Published : 
+    Highlight : MESIT machinery, a.s. 
+
+ 
+
+ 
+
+Váš prohlížeč nepodporuje video tag.
+
+ 
+
+# Precision mechanical parts production
+
+We provide complex machining services. Our production meets the highest demands on contracts in the aircraft, military and transport technology industry as well as health care and many oth
+    Summary   : Summary:
+
+MESIT machinery, a.s. appears as a precision machining and surface finishing provider targeting high-demand sectors (aerospace, defense, transport, healthcare). Relevant capabilities evidenced on the site include:
+- Precision manufacturing scope: CNC machining, production of castings, plating, and wet painting.
+- Industry focus: contracts for aircraft, military, transport technology, and
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 2
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec

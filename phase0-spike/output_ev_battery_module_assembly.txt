@@ -1,0 +1,212 @@
+================================================================================
+SPEC KEY : ev_battery_module_assembly
+QUERY    : IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+
+[1] Top 10 EV Battery Manufacturers in the World: 2026 Guide
+    https://www.evemall.eu/selection-guide/top-10-ev-battery-manufacturers-2026-2027
+    Snippet : Explore the top EV battery manufacturers in the world in 2026. Compare CATL, BYD, EVE Energy, LGES, Panasonic, and other leading battery ...
+
+[2] Contract Manufacturing Suppliers for Automotive in APAC
+    https://negotiations.ai/suppliers/contract-manufacturing-ems-apac-automotive-suppliers
+    Snippet : Integrated Micro-Electronics, Inc. (IMI). global-imi.com, EMS provider with automotive manufacturing solutions and IATF 16949-certified lines.
+
+[3] Top 10 Electronic Contract Manufacturers 2026: Buyer Guide
+    https://pcbsync.com/blog-top-10-electronic-contract-manufacturers-2026/
+    Snippet : Compare the top 10 electronic contract manufacturers for 2026. Honest reviews of Jabil, Flex, Sanmina, PCBSync, TTM, AT&S and more. Get a quote.
+
+[4] Top 10 Global EV/REEV Battery Pack Suppliers - LEAPENERGY
+    https://leap.hiitio.com/top-10-global-ev-battery-pack-suppliers/
+    Snippet : Headquartered in China, LEAPENERGY delivers complete solutions—from module assembly to pack integration, battery management systems (BMS), ...
+
+[5] The Top Global Certification Partners for EV Manufacturing
+    https://businesschief.com/news/global-certification-partners-for-ev-manufacturing
+    Snippet : The best ISO certification bodies for automotive companies in 2026 include NQA, ABS QE and Smithers for their experience, service reach, range ...
+
+[6] ProLogium Receives IATF 16949 International Automotive Quality ...
+    https://www.prnewswire.com/news-releases/prologium-receives-iatf-16949-international-automotive-quality-system-certificate-301802654.html
+    Snippet : This is the first time ever a solid-state lithium ceramic battery maker has been awarded IATF 16949, a demonstration that oxide SSBs are no ...
+
+[7] BYD joins global rule-making body IATF as automotive power shifts ...
+    https://newmobility.news/en/2026/03/11/byd-joins-global-rule-making-body-iatf-as-automotive-power-shifts-east/
+    Snippet : The IATF oversees IATF 16949, the quality management standard used by most car manufacturers worldwide to certify their suppliers. For ...
+
+[8] eMobility - ATS Industrial Automation
+    https://atsindustrialautomation.com/where-we-play/emobility/
+    Snippet : Explore ATS Industrial Automation's expertise eMobility automation solutions for powertrain component assembly and testing for EVs.
+
+[9] Top 10 Electronic Contract Manufacturers 2026 Buyer Guide
+    https://theactionelite.com/top-10-electronic-contract-manufacturers-2026-buyer-guide/
+    Snippet : 1. Sanmina · Founded / HQ: 1980 / San Jose, California · Key Services: PCB fabrication, complex PCBA, optical and RF modules, system integration, repair and ...
+
+[10] IATF 16949 - Sunbird Engineering
+    https://www.sunbird.co/certification/lorem-ipsum-is-simply-dummy-text-of-the-industry-2/
+    Snippet : IATF 16949. Contact Us. Hong Kong · China · Thailand · UK · USA. Head Office. Unit 1605, W668 Castle Peak Road Lai Chi Kok, Kowloon, Hong Kong. Aerospace · EV / ...
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+
+[1] We are building a battery production line for GigafactoryX from Impact Clean Power Technology – Nextomation – Next starts now [PL]
+    https://teamtechnik.pl/en/we-are-building-a-battery-production-line-for-gigafactoryx-from-impact-clean-power-technology/
+    Published : 
+    Highlight : We are building a battery production line for GigafactoryX from Impact Clean Power Technology – Nextomation – Next starts now
+
+# We are building a battery production line for GigafactoryX from Impact Clean Power Technology
+
+- luty 20, 2023
+- Contact
+
+GIGAFACTORYX: 16,000 BATTERY SYSTEMS FROM IMPACT 
+    Summary   : Summary:
+
+- Supplier: Teamtechnik Production Technology (teamtechnik PT) from Skawina, Poland.
+- Project: Building a battery production line for GigafactoryX for Impact Clean Power Technology.
+- Capabilities evidenced:
+  - Specializes in customized automated assembly lines for mobility, industrial goods, and life science sectors.
+  - Involvement in a turnkey production line for EV battery systems,
+
+[2] EVE Power to Build Green Energy Plant to Supply BMW Electric Cars in Hungary
+    https://www.evepower.com/en/news-1295
+    Published : 
+    Highlight : EVE Power to Build Green Energy Plant to Supply BMW Electric Cars in Hungary-News-EVE
+EVE attaches great importance to your personal privacy. When you visit our website, please agree to the use of all cookies. More information about the processing of personal data can be found at"Privacy Policy"
+
+Ac
+    Summary   : Summary:
+
+- Topic: EVE Power plans to build a green energy plant in Hungary to supply BMW electric cars.
+- Capabilities evidenced:
+  - Battery and energy solutions focus (Power Battery, Prismatic LFP/NCM Cells, Pouch NCM Cell).
+  - Indicates capability to develop and deploy green energy/plants, with a focus on battery production or supply for automotive OEMs.
+- Certifications and standards:
+  - Th
+
+[3] E-mobility – Sturm-Gruppe [non-ASCII]
+    https://sturm-gruppe.com/e-mobility/?lang=en
+    Published : 
+    Highlight : E-mobility – Sturm-Gruppe
+
+- Material Handling Systems
+- Surface Coating Systems
+- Thermal Surface Technology / Automation Technology
+
+Service & After Sales
+
+- Service & After Sales
+- Warranty application
+
+Information on Data Protection
+
+- in Business Transactions
+- for Applications
+
+## E-mobility
+
+
+    Summary   : Summary:
+
+Does this supplier match the spec?
+- The Sturm-Gruppe presents itself as an e-mobility systems integrator with high-tech plants for battery cell production.
+- Capabilities highlighted:
+  - End-to-end integration: from battery cell coating to ready-to-install battery systems.
+  - Modular plant integration: easy embedding of plant modules into existing production lines.
+  - Industrial imag
+
+[4] Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+    https://www.newswit.com/en/if6xt1gtpiimxkh4fyqwoxg25zgubv3h
+    Published : 
+    Highlight : Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+
+# Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+
+Press Re
+    Summary   : Summary:
+
+The article announces Banpu NEXT (a Banpu PCL subsidiary and Net Zero Solutions provider) and Durapower inaugurating the DP NEXT assembly plant in AMATA City, Chonburi, Thailand. The facility aims to accelerate electrification of buses and heavy-duty vehicles in Thailand and the Asia-Pacific region, aligning with Thailand’s Net Zero goals. It positions the partners to enable mass product
+
+[5] LYTH Customized Battery Modules & PACK Solutions | LFP, NMC, SIB, LTO Energy Systems | LYTH
+    https://lythpower.com/lyth-battery-solutions-customized-modules-packs-for-diverse-energy-needs/
+    Published : 2026-04-13T03:03:17.000Z
+    Highlight : LYTH Customized Battery Modules & PACK Solutions | LFP, NMC, SIB, LTO Energy Systems | LYTH
+
+# LYTH Battery Solutions: Customized Modules & PACKs for Diverse Energy Needs
+
+As the global energy transition accelerates in 2026, battery demand has become increasingly diversified—far beyond what a single
+    Summary   : Summary:
+
+- Supplier: LYTH Battery Solutions, an exporter of customized lithium battery modules and PACKs.
+- Chemistry coverage: LFP, NMC, SIB (Sodium-Ion), and LTO, indicating full-chemistry capability.
+- Capabilities evidenced:
+  - Custom module and PACK solutions tailored to diverse energy needs (cost-sensitive storage, high-energy-density mobility, extreme conditions).
+  - End-to-end support f
+
+[6] EV/PHEV/HEV Battery Packs for Electric Vehicles | VREMT
+    https://www.vremtglobal.com/solutions/battery-system/mobile/battery-pack
+    Published : 
+    Highlight : -- (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,d
+    Summary   : Summary:
+
+- Capability and scale: The supplier offers highly integrated EV battery packs for EVs/HEVs/PHEVs, with full-stack self-development and diverse technologies aimed at safety, performance, and supply security. They operate 12 automated and 16 flexible production lines, producing packs from 15.5 kWh to 100 kWh, with an annual capacity of about 1.047 million pack sets.
+- Manufacturing footpr
+
+[7] Battery Pack Integration & Engineering, EV & Automotive Systems
+    https://jayemauto.com/battery-pack/
+    Published : 2026-01-10T05:47:17.000Z
+    Highlight : Battery Pack Integration & Engineering, EV & Automotive Systems
+
+## EV BATTERY PACK
+
+## DESIGNED, ENGINEERED & MANUFACTURED BY JAYEM AUTOMOTIVES
+
+Jayem Automotives designs and manufactures automotive-grade battery pack systems for electric and hybrid mobility applications. Built on deep experience i
+    Summary   : Summary:
+
+Yes, Jayem Automotives positions itself as a turnkey creator of automotive-grade battery packs, with capabilities aligned to design, engineering, manufacturing, testing, and certification of battery systems for EVs and hybrids.
+
+Key capabilities evidenced:
+- End-to-end battery pack programs: architecture definition, design, manufacturing, testing, and certification, enabling faster time-
+
+[8] Lithium iron Phosphate Battery Manufacturer – LGNE [non-ASCII]
+    https://www.lgnepower.com/
+    Published : 
+    Highlight : Lithium iron Phosphate Battery Manufacturer – LGNE
+
+- Battery Module
+- High Voltage Platform
+- Low Voltage System
+- Cell Platform
+
+## Battery Module
+
+01
+
+Integration-ready battery modules manufactured as standardised building blocks for scalable battery systems.
+
+## High Voltage Platform
+
+02
+
+Integr
+    Summary   : Summary:
+
+LGNE presents itself as a Lithium Iron Phosphate (LFP) battery supplier with a clear focus on integration-ready solutions for industrial electrification. Key capabilities and evidence:
+
+- Product platforms:
+  - Battery Module: Standardised, integration-ready modules for scalable systems.
+  - High Voltage Platform: Integration-ready high-voltage subsystems for partner-defined architecture
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 3
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec

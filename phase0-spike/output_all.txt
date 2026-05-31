@@ -1,0 +1,732 @@
+================================================================================
+SPEC KEY : aerospace_titanium_machining
+QUERY    : AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+
+[1] Aerospace CNC Machining Tijuana & Mexicali - - Baja Supplies
+    https://bajasupplies.com/aerospace-cnc-machiningin-tijuana-mexicali/
+    Snippet : Precision aerospace components from AS9100 certified shops in Mexico. Aluminum, titanium, Inconel, and stainless steel, with full material ...
+
+[2] ABT Mexico | CNC machining | Turning | Sheet Metal
+    https://abtmexico.com/
+    Snippet : At ABT Manufacturing Service, we bring together CNC machining, sheet metal fabrication, mechanical design, and dimensional inspection all under one roof.
+
+[3] AS9100-Certified CNC Machining Specialists | Winslow Automatics
+    https://www.winslowautomatics.com/as9100-certified-cnc-machining-specialis
+    Snippet : Winslow Automatics Inc. is an AS9100-certified CNC machining specialist providing precision CNC milling, CNC turning, and contract manufacturing services for ...
+
+[4] Titanium Forging Services | AS9100 Co-Owned & Operated Foundry
+    https://www.forcebeyond.com/titanium-forging/
+    Snippet : ForceBeyond is a Tier-1.5 manufacturing partner specializing in high-integrity Titanium Forging for aerospace, defense, and medical sectors.
+
+[5] Aerospace CNC Machining USA | AS9100 Rev D Certified Supplier
+    https://ne-xtusa.com/aerospace/
+    Snippet : We offer extensive Aerospace CNC machining services throughout the USA from Connecticut. From Titanium & Inconel parts to assembly solutions.
+
+[6] Aerospace CNC Machining | AS9100 Certified, ITAR Registered
+    https://hppi.com/aerospace-cnc-machining
+    Snippet : Precision aerospace CNC machining to support low volume and high volume production needs. Hirsh is AS9100 certified and ITAR registered. Get a Quote today.
+
+[7] Precision Sheet Metal & CNC Machining Services | PARPRO
+    https://parpro.com/precision-machining/
+    Snippet : We offer a full range of precision machining services - CNC milling and turning creating custom manufactured parts to serve any of your industrial needs.
+
+[8] AS9100D Aerospace CNC Machining - Large-Format & 5-Axis
+    https://www.borgdesign.com/industries/aerospace-industry-cnc-machining/
+    Snippet : AS9100D and CMMC Level 2 certified aerospace CNC machining in Massachusetts. Precision machining, aerospace prototypes, titanium machining.
+
+[9] CNC Machining Titanium - - AIXI Hardware
+    https://www.aixihardware.com/es/cnc-machining-titanium/
+    Snippet : Titanium CNC Machining Service Supplier – AIXI. Titanium alloy is light in weight but high in strength, high-temperature resistance, and chemical corrosion ...
+
+[10] Titanium Machining Services for Aerospace Defense and Space
+    https://www.intrexcorp.com/titanium-machining/
+    Snippet : Intrex Aerospace offers precision titanium machining services for aerospace defense and space. Our facilities are both ISO 9001 and AS9100.
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: AS9100-certified contract manufacturers capable of CNC machining titanium components under 50kg in Mexico or Eastern Europe
+
+[1] PCNC — Precision CNC Machining [non-ASCII]
+    https://aeronc.com/
+    Published : 
+    Highlight : PCNC — Precision CNC Machining
+
+✕
+
+↑
+
+AS9100 Rev D · Nadcap Merit · Est. 1993
+
+# Precision Machining Excellence
+
+// Procesos Control Numérico Computarizado
+
+High-precision CNC machining for aerospace, automotive and industrial sectors. 30+ years delivering mission-critical components from Toluca, Mé
+    Summary   : Answer: Yes, this supplier matches high-precision aerospace/industrial CNC needs with several key capabilities, certifications, and geographic reach evidenced.
+
+Capabilities
+- High-precision CNC machining for aerospace, automotive, and industrial sectors.
+- Experience manufacturing mission-critical components.
+- CNC lathe machining capability (implied by history with Fisher Controls and broader pr
+
+[2] Sonora's Titanium Anchor: The CPP Foundry Blueprint | Retail Logistics MX
+    https://retaillogisticsmx.com/sonoras-titanium-anchor-cpp-foundry-blueprint-strategy/
+    Published : 2026-04-08T07:54:07.000Z
+    Highlight : Sonora's Titanium Anchor: The CPP Foundry Blueprint | Retail Logistics MX
+
+The Everest Group’s foundational site selection for a single 120,000 square foot facility in Guaymas crossed a threshold, introducing North America’s first major independent titanium casting capability outside the established
+    Summary   : Summary:
+
+- What the article describes: The CPP (Consolidated Precision Products) campus in Sonora, anchored by a 120,000 sq ft facility in Guaymas, marks North America’s first major independent titanium casting capability outside the traditional aerospace oligopoly. Originating with Pacific Cast Technologies, this site is presented as a strategic asset to re-shore high-value aerospace/metallurgy 
+
+[3] Custom Titanium Machining & Fabrication | Build to Print
+    https://suppliertitanium.com/product/custom-titanium-products-manufactured-to-your-drawings/
+    Published : 2025-10-27T13:01:01.000Z
+    Highlight : Custom Titanium Machining & Fabrication | Build to Print
+
+# Custom Titanium Products (Manufactured to Your Drawings)
+
+When standard catalogs fall short of your engineering requirements, we leverage over a decade of titanium metallurgy expertise to transform your CAD drawings into high-precision real
+    Summary   : Summary:
+
+- Capabilities evidenced: Custom titanium machining and fabrication (Build-to-Print) with core capabilities including 5-axis CNC, welding, forging, sheet metal, and heat treatment. Ability to handle single prototypes to high-volume production. Free DFM review and CMM inspection with EN 10204 3.1 MTC. Materials listed include multiple titanium grades (Grade 1, 2, 3, 4, 5, 7, 9, 12, 23, 24
+
+[4] Radii - High-Precision CNC Machining in Mexico | IATF 16949 & AS9100 [MX]
+    https://www.radii.com.mx/en/capabilities/cnc
+    Published : 
+    Highlight : Radii - High-Precision CNC Machining in Mexico | IATF 16949 & AS9100
+
+CAPABILITIES
+
+# High-Precision CNC Machining in Mexico
+
+Tolerances from ±0.005mm on 5-axis milling and turning. CMM dimensional verification. Surface finishes from Ra 0.8. Partner network with IATF 16949 & AS9100 certification for
+    Summary   : Summary:
+
+- Capabilities: High-precision CNC machining in Mexico with tolerances down to ±0.005 mm on 5-axis milling and turning. CMM dimensional verification and surface finishes to Ra 0.8.
+- Certifications: IATF 16949 and AS9100 certified, indicating automotive and aerospace quality systems.
+- Geographic reach: Based in Mexico with capability to serve automotive and aerospace sectors; no explici
+
+[5] Kisentra - Engineering & Manufacturing Solutions | From Concept to Production
+    https://www.kisentraglobal.com/industries/aerospace-defence
+    Published : 
+    Highlight : Kisentra - Engineering & Manufacturing Solutions | From Concept to Production
+
+Welcome to Kisentra Global Pvt. Ltd. - Transforming businesses with innovative technology solutions 🚀 Learn more
+
+Aerospace & Defense
+
+# EngineeringMission-CriticalExcellence
+
+Trusted aerospace manufacturing partner deliv
+    Summary   : Summary:
+
+- Capabilities:
+  - 5-axis CNC machining
+  - Precision assembly
+  - CMM inspection
+  - Exotic alloy expertise
+  - Aerostructures and flight-critical components manufacturing
+
+- Certifications / Compliance:
+  - AS9100D (Aerospace QMS)
+  - NADCAP accreditation (special processes)
+  - ITAR compliance
+  - ISO 9001 (Quality Management)
+
+- Geographic reach:
+  - The page does not specify geogra
+
+[6] Custom Titanium Parts Manufacturing - PartsMFGX
+    https://parts-mfg.com/custom-titanium-parts/
+    Published : 2025-06-30T15:00:56.000Z
+    Highlight : Custom Titanium Parts Manufacturing - PartsMFGX
+
+# Custom Titanium Parts Manufacturing
+
+Precision CNC machining services for high-performance titanium components. From aerospace to medical applications, we deliver exceptional quality with 12 years of manufacturing expertise.
+
+12+
+
+Years Experience
+
+
+    Summary   : Yes, PartsMFGX matches the spec in several key areas. Evidence from the page:
+
+Capabilities
+- Precision CNC machining for high-performance titanium components, including Grade 1–5 titanium alloys.
+- Advanced 5-axis CNC machining centers with specialized tooling for titanium, delivering precise geometry and high-quality surface finishes.
+- Tight tolerances: ±0.005″.
+- Broad application experience: 
+
+[7] Aerospace CNC Machining | Specialty Machine
+    https://www.specialtymachinelp.com/industries/aerospace-cnc-machining/
+    Published : 2026-04-24T14:16:59.000Z
+    Highlight : Aerospace CNC Machining | Specialty Machine
+
+# AEROSPACE CNC MACHINING
+
+##### For over 50 years, Specialty Machine has been a trusted partner to the aerospace and defense industry, delivering mission-critical components that demand absolute precision and unwavering reliability.
+
+##### Our Capabiliti
+    Summary   : Summary:
+
+- Supplier: Specialty Machine (Specialty Machine LP)
+- Industry focus: Aerospace and defense; over 50 years of experience
+- Capabilities evidenced:
+  - CNC machining for flight-critical components
+  - Precision manufacturing with emphasis on absolute precision, reliability, and zero-defect parts
+  - Capability to handle complex aerospace components from rapid prototyping to full producti
+
+[8] MESIT machinery, a.s.
+    https://mesitmachining.com/
+    Published : 
+    Highlight : MESIT machinery, a.s. 
+
+ 
+
+ 
+
+Váš prohlížeč nepodporuje video tag.
+
+ 
+
+# Precision mechanical parts production
+
+We provide complex machining services. Our production meets the highest demands on contracts in the aircraft, military and transport technology industry as well as health care and many oth
+    Summary   : Summary:
+
+MESIT machinery, a.s. appears as a precision machining and surface finishing provider targeting high-demand sectors (aerospace, defense, transport, healthcare). Relevant capabilities evidenced on the site include:
+- Precision manufacturing scope: CNC machining, production of castings, plating, and wet painting.
+- Industry focus: contracts for aircraft, military, transport technology, and
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 2
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec
+
+================================================================================
+SPEC KEY : contract_pharma_packaging
+QUERY    : FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+
+[1] India continues to top FDA-registered generics facilities, sets up 20 ...
+    https://www.pharmacompass.com/radio-compass-blog/india-continues-to-top-fda-registered-generics-facilities-sets-up-20-new-units-for-fy24
+    Snippet : Viatris has registered 18 facilities, including 13 for FDFs and four for APIs, and one facility that is engaged in both API and FDF activities.
+
+[2] Pharmaceutical Contract Packaging Market Size 2025 - 2034
+    https://www.custommarketinsights.com/report/pharmaceutical-contract-packaging-market/
+    Snippet : Global Pharmaceutical Contract Packaging Market size was valued at $18.40 Bn in 2025 and it will grow $34.80 Bn, CAGR of 7.34% by 2025-2034.
+
+[3] Pharmaceutical Primary Packaging Companies in India - FDApals
+    https://fdapals.com/drug-master-file/pharmaceutical-primary-packaging/
+    Snippet : West Pharmaceutical Services is a leading provider in field of pharma packaging, and drug delivery systems. It Started its operation in India in 1990.
+
+[4] PES Pharma is proud to announce its representation of Cam ...
+    https://www.instagram.com/p/DW4FKqYDOhG/
+    Snippet : ... blister lines, cartoners, and serialization systems. ... Patco Pharma delivers premium pharmaceutical packaging solutions trusted across India
+
+[5] Pharmaceutical Packaging Companies in USA, India - PackTime
+    https://pack-time.com/pharmaceutical-packaging-usa/
+    Snippet : This comprehensive guide will delve into various types of pharmaceutical packaging solutions, each designed to address specific needs and challenges in the ...
+
+[6] [XLS] FY 2025 Facility Payments - FDA
+    https://www.fda.gov/media/187222/download
+    Snippet : The financial data presented in this OMUFA Paid Facilities List encompasses OMUFA facility fee payments received through both the coversheet and invoice routes.
+
+[7] Healthcare Blister Packaging Market | Industry Report, 2033
+    https://www.grandviewresearch.com/industry-analysis/healthcare-blister-packaging-market-report
+    Snippet : Healthcare blister packaging market size was at $22.12 billion in 2025 and is expected to reach $42.31 billion by 2033, at a CAGR of 8.6% from 2026 to 2033.
+
+[8] Blister Packaging Machines for Pharma Market Research Report 2033
+    https://dataintelo.com/report/global-blister-packaging-machines-for-pharma-market
+    Snippet : The global blister packaging machines for pharma market was valued at $4.2 billion in 2025 and is projected to reach $6.8 billion by 2033, representing a ...
+
+[9] Select the best packaging for the hygroscopic, light sensitive & less ...
+    https://www.facebook.com/groups/744659585678403/posts/3664595623684770/
+    Snippet : Select the best packaging for the hygroscopic, light sensitive & less margin pharmaceutical product: a. Blister Packaging b. Alu-Alu Packaging c ...
+
+[10] Pharmaceutical Packaging Market - 2036 - Fact.MR
+    https://www.factmr.com/report/4573/pharmaceutical-packaging-market
+    Snippet : Serialization solution providers must develop packaging line integration support capability that reduces implementation timelines for pharmaceutical ...
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+
+[1] Medicine Blister Packaging | Abhinav Enterprises
+    https://abhinaventerprises.com/medicine-blister-packaging-2/
+    Published : 
+    Highlight : Medicine Blister Packaging | Abhinav Enterprises
+
+# Medicine Blister Packaging
+
+## Medicine Blister Packaging
+
+Over 30 Years of Experience, Abhinav Enterprises has become a reputed Medicine Blister Packaging Company in Delhi, NCR, India. Medicine Blister Packaging is manufactured with high quality P
+    Summary   : Summary:
+
+- Capabilities demonstrated:
+  - Over 30 years of experience in medicine blister packaging.
+  - Customization capability to meet customer needs.
+  - Production using high-quality PVC/plastic materials with quality checks.
+  - Uses latest machinery and robust infrastructure.
+  - Applies to medicine blister packaging (pharma-focused) and also supplies blister packaging for food items, sugg
+
+[2] Piramal Pharma Solutions - Pithampur Facility | Oral Solid Dosage Manufacturing & Packaging
+    https://www.piramalpharmasolutions.com/facilities/pithampur
+    Published : 
+    Highlight : Piramal Pharma Solutions - Pithampur Facility | Oral Solid Dosage Manufacturing & Packaging 
+
+ 
+
+arrow_back_ios_new
+
+arrow_forward_ios
+
+# Pithampur, India
+
+Piramal Pharma Limited Plot 67-70, sector II Pithampur, Indore, Madhya Pradesh 454775 (India)
+
+- Devi Ahilyabai Holkar Airport, Indore
+- Driving
+    Summary   : Summary:
+
+- Capabilities:
+  - Commercial manufacturing and packaging of oral solid dosage (OSD) forms (tablets and capsules) for clinical, pilot, and commercial scales.
+  - Capacity: 4.5 billion OSD units per year across three blocks.
+  - Additional packaging services for finished OSD products.
+
+- Certifications/regulatory accreditations:
+  - USFDA
+  - EU GMP
+  - Brazil Anvisa
+  - TGA Australia
+  
+
+[3] Primary & Secondary Packing | Ensera | Medical & Pharma Contract Packing
+    https://www.ensera.com/capabilities/primary-secondary-packing/
+    Published : 2024-11-01T00:00:00.000Z
+    Highlight : Primary & Secondary Packing | Ensera | Medical & Pharma Contract Packing
+
+SteriPack is now Ensera Read story
+
+# Primary and secondary packing
+
+We have over 25 years’ experience devising fast, customized packing solutions for some of the world’s most innovative pharmaceutical companies
+
+## A speciali
+    Summary   : Summary:
+
+Does this supplier match the spec?
+- Yes, for primary and secondary packing of complex drug delivery systems, with capabilities to assemble and package a wide range of products (inhalers, autoinjectors, pen injectors, vials, pre-filled syringes) and complementary kits.
+- They partner with fill/finish companies and handle complex requirements on behalf of pharmaceutical customers.
+- They 
+
+[4] Built on Service, Trust and Quality: How Alpex Pharma Became the Manufacturing Partner Pharma Brands Rely On - The Tribune
+    https://www.tribuneindia.com/news/business/built-on-service-trust-and-quality-how-alpex-pharma-became-the-manufacturing-partner-pharma-brands-rely-on/
+    Published : 2026-03-19T07:01:33.000Z
+    Highlight : Built on Service, Trust and Quality: How Alpex Pharma Became the Manufacturing Partner Pharma Brands Rely On - The Tribune 
+
+Subscribe To Print Edition About The Tribune Code Of Ethics Download App Careers Advertise with us Classifieds 
+
+MASTER AI WITH TRIBUNEA comprehensive AI Certification CourseE
+    Summary   : Summary:
+
+- Topic: Alpex Pharma is highlighted as a prominent contract manufacturing partner in India, emphasizing how contract manufacturers (CMOs) are central to the evolving pharmaceutical industry in India and globally.
+- Evidence of capabilities: The article positions Alpex Pharma as a key manufacturing partner trusted by pharma brands for service, trust, and quality. It implies strong emphas
+
+[5] OUR MANUFACTURING | Walter Healthcare [IN]
+    https://www.walterhealthcare.co.in/contract-manufacturing
+    Published : 
+    Highlight : OUR MANUFACTURING | Walter Healthcare
+
+top of page
+
+## CONTRACT MANUFACTURING / THIRD-PARTY
+
+## Made by Walter®
+
+##### Get a Quote within 15 mins
+
+Select a Service
+
+DRUG LIC. (Y/N)
+
+YES
+
+NO
+
+APPLIED
+
+GSTIN (Y/N)
+
+YES
+
+NO
+
+APPLIED
+
+Request a Quote
+
+Thanks for submitting!
+
+We will contact your shortly
+    Summary   : Summary:
+
+- Supplier: Walter Healthcare (Mohali, Punjab, India)
+- Capabilities:
+  - Contract manufacturing / third-party manufacturing for pharmaceutical formulations
+  - State-of-the-art facility with capability to produce a wide range of dosage forms
+  - In-house packaging and labeling
+  - Focus on compliance with GMP and WHO-GMP for clinical manufacturing
+  - CMC guidance understood for success
+
+[6] Sterile Oncology & High-Potency Manufacturing in India | Teyro Labs India
+    https://teyro.com/manufacturing/
+    Published : 2025-03-20T15:51:19.000Z
+    Highlight : Sterile Oncology & High-Potency Manufacturing in India | Teyro Labs India
+
+- Home
+- Our Capabilities
+- Manufacturing
+
+## Sterile & Non-sterile Oncology & High Potent Manufacturing
+
+Our facility is a globally recognized manufacturer of injectable and solid oral dosage (OSD) oncology products, approve
+    Summary   : Summary:
+
+- Capabilities evidenced:
+  - Sterile and non-sterile oncology manufacturing for injectable and solid oral dosage (OSD) products.
+  - High-potent/semis strong containment operations using advanced isolator technology and Closed Restricted Access Barrier System (cRABS).
+  - Compliance with stringent international regulatory standards in manufacturing.
+
+- Certifications/regulatory credibil
+
+[7] About Us – Eqova Medicare [IN]
+    https://www.eqova.in/about-us/
+    Published : 
+    Highlight : About Us – Eqova Medicare
+
+# About Us
+
+# Innovating Pharma, Transforming Healthcare
+
+At EQOVA Medicare, we bring expertise to pharmaceutical manufacturing, with over 500 approved products and 50 CTD dossiers to our name. Our cutting-edge facilities integrate ERP and LIMS systems to ensure precision 
+    Summary   : Summary:
+
+- Capabilities:
+  - Pharmaceutical manufacturing expertise with 500+ approved products and 50 CTD dossiers.
+  - Specializes in formulations, contract manufacturing, and product innovation.
+  - Advanced operations integrating ERP and LIMS for precision and efficiency.
+
+- Certifications:
+  - Strives for EU-GMP accreditation (aims to achieve European good manufacturing practices).
+
+- Geogra
+
+[8] Automatic Blister Packing Machine in Mumbai  Packa... | Jicon Technologies Pvt Ltd -  Chandigarh [IN]
+    https://www.jicon.in/chandigarh/latest-update/automatic-blister-packing-machine-in-mumbai-packa/128
+    Published : 
+    Highlight : Automatic Blister Packing Machine in Mumbai Packa... | Jicon Technologies Pvt Ltd - Chandigarh
+
+62e37142725a650001e90cb6
+
+JICONTECHNOLOGIESPVTLTD4A40
+
+62e37142725a650001e90cb6
+
+JICONTECHNOLOGIESPVTLTD4A40
+
+products
+
+68179d65be22ee500d53ff54
+
+Jicon Technologies Pvt Ltd
+
++919167992017
+
+Chat with us
+
+C
+    Summary   : Summary:
+
+- Supplier: Jicon Technologies Pvt Ltd (Chandigarh-based; listing references to Mumbai market)
+- Capabilities evidenced:
+  - Products: High-speed automatic blister packing machines; tablet blister packaging machines; alu blister packaging machines; blister sealing machines.
+  - Focus on packaging machinery, specifically automatic blister packing equipment.
+- Certifications: No certificat
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 3
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec
+
+================================================================================
+SPEC KEY : ev_battery_module_assembly
+QUERY    : IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+
+[1] Top 10 EV Battery Manufacturers in the World: 2026 Guide
+    https://www.evemall.eu/selection-guide/top-10-ev-battery-manufacturers-2026-2027
+    Snippet : Explore the top EV battery manufacturers in the world in 2026. Compare CATL, BYD, EVE Energy, LGES, Panasonic, and other leading battery ...
+
+[2] Contract Manufacturing Suppliers for Automotive in APAC
+    https://negotiations.ai/suppliers/contract-manufacturing-ems-apac-automotive-suppliers
+    Snippet : Integrated Micro-Electronics, Inc. (IMI). global-imi.com, EMS provider with automotive manufacturing solutions and IATF 16949-certified lines.
+
+[3] Top 10 Electronic Contract Manufacturers 2026: Buyer Guide
+    https://pcbsync.com/blog-top-10-electronic-contract-manufacturers-2026/
+    Snippet : Compare the top 10 electronic contract manufacturers for 2026. Honest reviews of Jabil, Flex, Sanmina, PCBSync, TTM, AT&S and more. Get a quote.
+
+[4] Top 10 Global EV/REEV Battery Pack Suppliers - LEAPENERGY
+    https://leap.hiitio.com/top-10-global-ev-battery-pack-suppliers/
+    Snippet : Headquartered in China, LEAPENERGY delivers complete solutions—from module assembly to pack integration, battery management systems (BMS), ...
+
+[5] The Top Global Certification Partners for EV Manufacturing
+    https://businesschief.com/news/global-certification-partners-for-ev-manufacturing
+    Snippet : The best ISO certification bodies for automotive companies in 2026 include NQA, ABS QE and Smithers for their experience, service reach, range ...
+
+[6] ProLogium Receives IATF 16949 International Automotive Quality ...
+    https://www.prnewswire.com/news-releases/prologium-receives-iatf-16949-international-automotive-quality-system-certificate-301802654.html
+    Snippet : This is the first time ever a solid-state lithium ceramic battery maker has been awarded IATF 16949, a demonstration that oxide SSBs are no ...
+
+[7] BYD joins global rule-making body IATF as automotive power shifts ...
+    https://newmobility.news/en/2026/03/11/byd-joins-global-rule-making-body-iatf-as-automotive-power-shifts-east/
+    Snippet : The IATF oversees IATF 16949, the quality management standard used by most car manufacturers worldwide to certify their suppliers. For ...
+
+[8] eMobility - ATS Industrial Automation
+    https://atsindustrialautomation.com/where-we-play/emobility/
+    Snippet : Explore ATS Industrial Automation's expertise eMobility automation solutions for powertrain component assembly and testing for EVs.
+
+[9] Top 10 Electronic Contract Manufacturers 2026 Buyer Guide
+    https://theactionelite.com/top-10-electronic-contract-manufacturers-2026-buyer-guide/
+    Snippet : 1. Sanmina · Founded / HQ: 1980 / San Jose, California · Key Services: PCB fabrication, complex PCBA, optical and RF modules, system integration, repair and ...
+
+[10] IATF 16949 - Sunbird Engineering
+    https://www.sunbird.co/certification/lorem-ipsum-is-simply-dummy-text-of-the-industry-2/
+    Snippet : IATF 16949. Contact Us. Hong Kong · China · Thailand · UK · USA. Head Office. Unit 1605, W668 Castle Peak Road Lai Chi Kok, Kowloon, Hong Kong. Aerospace · EV / ...
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: IATF 16949-certified contract manufacturers with experience in EV battery module assembly capable of 10,000+ units per month in Eastern Europe or Southeast Asia
+
+[1] We are building a battery production line for GigafactoryX from Impact Clean Power Technology – Nextomation – Next starts now [PL]
+    https://teamtechnik.pl/en/we-are-building-a-battery-production-line-for-gigafactoryx-from-impact-clean-power-technology/
+    Published : 
+    Highlight : We are building a battery production line for GigafactoryX from Impact Clean Power Technology – Nextomation – Next starts now
+
+# We are building a battery production line for GigafactoryX from Impact Clean Power Technology
+
+- luty 20, 2023
+- Contact
+
+GIGAFACTORYX: 16,000 BATTERY SYSTEMS FROM IMPACT 
+    Summary   : Summary:
+
+- Supplier: Teamtechnik Production Technology (teamtechnik PT) from Skawina, Poland.
+- Project: Building a battery production line for GigafactoryX for Impact Clean Power Technology.
+- Capabilities evidenced:
+  - Specializes in customized automated assembly lines for mobility, industrial goods, and life science sectors.
+  - Involvement in a turnkey production line for EV battery systems,
+
+[2] EVE Power to Build Green Energy Plant to Supply BMW Electric Cars in Hungary
+    https://www.evepower.com/en/news-1295
+    Published : 
+    Highlight : EVE Power to Build Green Energy Plant to Supply BMW Electric Cars in Hungary-News-EVE
+EVE attaches great importance to your personal privacy. When you visit our website, please agree to the use of all cookies. More information about the processing of personal data can be found at"Privacy Policy"
+
+Ac
+    Summary   : Summary:
+
+- Topic: EVE Power plans to build a green energy plant in Hungary to supply BMW electric cars.
+- Capabilities evidenced:
+  - Battery and energy solutions focus (Power Battery, Prismatic LFP/NCM Cells, Pouch NCM Cell).
+  - Indicates capability to develop and deploy green energy/plants, with a focus on battery production or supply for automotive OEMs.
+- Certifications and standards:
+  - Th
+
+[3] E-mobility – Sturm-Gruppe [non-ASCII]
+    https://sturm-gruppe.com/e-mobility/?lang=en
+    Published : 
+    Highlight : E-mobility – Sturm-Gruppe
+
+- Material Handling Systems
+- Surface Coating Systems
+- Thermal Surface Technology / Automation Technology
+
+Service & After Sales
+
+- Service & After Sales
+- Warranty application
+
+Information on Data Protection
+
+- in Business Transactions
+- for Applications
+
+## E-mobility
+
+
+    Summary   : Summary:
+
+Does this supplier match the spec?
+- The Sturm-Gruppe presents itself as an e-mobility systems integrator with high-tech plants for battery cell production.
+- Capabilities highlighted:
+  - End-to-end integration: from battery cell coating to ready-to-install battery systems.
+  - Modular plant integration: easy embedding of plant modules into existing production lines.
+  - Industrial imag
+
+[4] Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+    https://www.newswit.com/en/if6xt1gtpiimxkh4fyqwoxg25zgubv3h
+    Published : 
+    Highlight : Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+
+# Banpu NEXT and Durapower ready for mass production at Thailand battery assembly plant, leading country's commercial electric vehicle transition
+
+Press Re
+    Summary   : Summary:
+
+The article announces Banpu NEXT (a Banpu PCL subsidiary and Net Zero Solutions provider) and Durapower inaugurating the DP NEXT assembly plant in AMATA City, Chonburi, Thailand. The facility aims to accelerate electrification of buses and heavy-duty vehicles in Thailand and the Asia-Pacific region, aligning with Thailand’s Net Zero goals. It positions the partners to enable mass product
+
+[5] LYTH Customized Battery Modules & PACK Solutions | LFP, NMC, SIB, LTO Energy Systems | LYTH
+    https://lythpower.com/lyth-battery-solutions-customized-modules-packs-for-diverse-energy-needs/
+    Published : 2026-04-13T03:03:17.000Z
+    Highlight : LYTH Customized Battery Modules & PACK Solutions | LFP, NMC, SIB, LTO Energy Systems | LYTH
+
+# LYTH Battery Solutions: Customized Modules & PACKs for Diverse Energy Needs
+
+As the global energy transition accelerates in 2026, battery demand has become increasingly diversified—far beyond what a single
+    Summary   : Summary:
+
+- Supplier: LYTH Battery Solutions, an exporter of customized lithium battery modules and PACKs.
+- Chemistry coverage: LFP, NMC, SIB (Sodium-Ion), and LTO, indicating full-chemistry capability.
+- Capabilities evidenced:
+  - Custom module and PACK solutions tailored to diverse energy needs (cost-sensitive storage, high-energy-density mobility, extreme conditions).
+  - End-to-end support f
+
+[6] EV/PHEV/HEV Battery Packs for Electric Vehicles | VREMT
+    https://www.vremtglobal.com/solutions/battery-system/mobile/battery-pack
+    Published : 
+    Highlight : -- (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,d
+    Summary   : Summary:
+
+- Capability and scale: The supplier offers highly integrated EV battery packs for EVs/HEVs/PHEVs, with full-stack self-development and diverse technologies aimed at safety, performance, and supply security. They operate 12 automated and 16 flexible production lines, producing packs from 15.5 kWh to 100 kWh, with an annual capacity of about 1.047 million pack sets.
+- Manufacturing footpr
+
+[7] Battery Pack Integration & Engineering, EV & Automotive Systems
+    https://jayemauto.com/battery-pack/
+    Published : 2026-01-10T05:47:17.000Z
+    Highlight : Battery Pack Integration & Engineering, EV & Automotive Systems
+
+## EV BATTERY PACK
+
+## DESIGNED, ENGINEERED & MANUFACTURED BY JAYEM AUTOMOTIVES
+
+Jayem Automotives designs and manufactures automotive-grade battery pack systems for electric and hybrid mobility applications. Built on deep experience i
+    Summary   : Summary:
+
+Yes, Jayem Automotives positions itself as a turnkey creator of automotive-grade battery packs, with capabilities aligned to design, engineering, manufacturing, testing, and certification of battery systems for EVs and hybrids.
+
+Key capabilities evidenced:
+- End-to-end battery pack programs: architecture definition, design, manufacturing, testing, and certification, enabling faster time-
+
+[8] Lithium iron Phosphate Battery Manufacturer – LGNE [non-ASCII]
+    https://www.lgnepower.com/
+    Published : 
+    Highlight : Lithium iron Phosphate Battery Manufacturer – LGNE
+
+- Battery Module
+- High Voltage Platform
+- Low Voltage System
+- Cell Platform
+
+## Battery Module
+
+01
+
+Integration-ready battery modules manufactured as standardised building blocks for scalable battery systems.
+
+## High Voltage Platform
+
+02
+
+Integr
+    Summary   : Summary:
+
+LGNE presents itself as a Lithium Iron Phosphate (LFP) battery supplier with a clear focus on integration-ready solutions for industrial electrification. Key capabilities and evidence:
+
+- Product platforms:
+  - Battery Module: Standardised, integration-ready modules for scalable systems.
+  - High Voltage Platform: Integration-ready high-voltage subsystems for partner-defined architecture
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 3
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec
+
+
+================================================================================
+AGGREGATE SUMMARY
+================================================================================
+
+aerospace_titanium_machining:
+  serper_count: 10
+  exa_count: 8
+  serper_missing_hits: 0
+  exa_non_english: 2
+
+contract_pharma_packaging:
+  serper_count: 10
+  exa_count: 8
+  serper_missing_hits: 0
+  exa_non_english: 3
+
+ev_battery_module_assembly:
+  serper_count: 10
+  exa_count: 8
+  serper_missing_hits: 0
+  exa_non_english: 3
+
+── MEASURABLE PASS CRITERIA ────────────────────────────────────────────────
+Serper 'Missing:' hits / total Serper results : 0/30 (0%)
+  Pass criterion: >=50% of results have Missing: annotations → FAIL/CHECK
+Exa non-English-domain specs : 3/3
+  Pass criterion: >=2 specs show non-English Exa results → PASS
+
+── MANUAL PASS CRITERIA (review per-spec .txt files) ───────────────────────
+  For each spec: Exa ≥3 candidates meeting capability+cert+geography → PASS
+  For each spec: Serper ≤1 candidate meeting all three → PASS
+
+See verdict.md for final ruling.

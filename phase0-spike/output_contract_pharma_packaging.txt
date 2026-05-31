@@ -1,0 +1,266 @@
+================================================================================
+SPEC KEY : contract_pharma_packaging
+QUERY    : FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+================================================================================
+
+── PIPELINE A: Google (Serper) ─────────────────────────────────────────────
+Query sent verbatim: FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+
+[1] India continues to top FDA-registered generics facilities, sets up 20 ...
+    https://www.pharmacompass.com/radio-compass-blog/india-continues-to-top-fda-registered-generics-facilities-sets-up-20-new-units-for-fy24
+    Snippet : Viatris has registered 18 facilities, including 13 for FDFs and four for APIs, and one facility that is engaged in both API and FDF activities.
+
+[2] Pharmaceutical Contract Packaging Market Size 2025 - 2034
+    https://www.custommarketinsights.com/report/pharmaceutical-contract-packaging-market/
+    Snippet : Global Pharmaceutical Contract Packaging Market size was valued at $18.40 Bn in 2025 and it will grow $34.80 Bn, CAGR of 7.34% by 2025-2034.
+
+[3] Pharmaceutical Primary Packaging Companies in India - FDApals
+    https://fdapals.com/drug-master-file/pharmaceutical-primary-packaging/
+    Snippet : West Pharmaceutical Services is a leading provider in field of pharma packaging, and drug delivery systems. It Started its operation in India in 1990.
+
+[4] PES Pharma is proud to announce its representation of Cam ...
+    https://www.instagram.com/p/DW4FKqYDOhG/
+    Snippet : ... blister lines, cartoners, and serialization systems. ... Patco Pharma delivers premium pharmaceutical packaging solutions trusted across India
+
+[5] Pharmaceutical Packaging Companies in USA, India - PackTime
+    https://pack-time.com/pharmaceutical-packaging-usa/
+    Snippet : This comprehensive guide will delve into various types of pharmaceutical packaging solutions, each designed to address specific needs and challenges in the ...
+
+[6] [XLS] FY 2025 Facility Payments - FDA
+    https://www.fda.gov/media/187222/download
+    Snippet : The financial data presented in this OMUFA Paid Facilities List encompasses OMUFA facility fee payments received through both the coversheet and invoice routes.
+
+[7] Healthcare Blister Packaging Market | Industry Report, 2033
+    https://www.grandviewresearch.com/industry-analysis/healthcare-blister-packaging-market-report
+    Snippet : Healthcare blister packaging market size was at $22.12 billion in 2025 and is expected to reach $42.31 billion by 2033, at a CAGR of 8.6% from 2026 to 2033.
+
+[8] Blister Packaging Machines for Pharma Market Research Report 2033
+    https://dataintelo.com/report/global-blister-packaging-machines-for-pharma-market
+    Snippet : The global blister packaging machines for pharma market was valued at $4.2 billion in 2025 and is projected to reach $6.8 billion by 2033, representing a ...
+
+[9] Select the best packaging for the hygroscopic, light sensitive & less ...
+    https://www.facebook.com/groups/744659585678403/posts/3664595623684770/
+    Snippet : Select the best packaging for the hygroscopic, light sensitive & less margin pharmaceutical product: a. Blister Packaging b. Alu-Alu Packaging c ...
+
+[10] Pharmaceutical Packaging Market - 2036 - Fact.MR
+    https://www.factmr.com/report/4573/pharmaceutical-packaging-market
+    Snippet : Serialization solution providers must develop packaging line integration support capability that reduces implementation timelines for pharmaceutical ...
+
+── PIPELINE B: Exa (neural) ────────────────────────────────────────────────
+Query sent verbatim: FDA-registered contract pharmaceutical packaging facilities with serialization capability for blister packs in India or Mexico
+
+[1] Medicine Blister Packaging | Abhinav Enterprises
+    https://abhinaventerprises.com/medicine-blister-packaging-2/
+    Published : 
+    Highlight : Medicine Blister Packaging | Abhinav Enterprises
+
+# Medicine Blister Packaging
+
+## Medicine Blister Packaging
+
+Over 30 Years of Experience, Abhinav Enterprises has become a reputed Medicine Blister Packaging Company in Delhi, NCR, India. Medicine Blister Packaging is manufactured with high quality P
+    Summary   : Summary:
+
+- Capabilities demonstrated:
+  - Over 30 years of experience in medicine blister packaging.
+  - Customization capability to meet customer needs.
+  - Production using high-quality PVC/plastic materials with quality checks.
+  - Uses latest machinery and robust infrastructure.
+  - Applies to medicine blister packaging (pharma-focused) and also supplies blister packaging for food items, sugg
+
+[2] Piramal Pharma Solutions - Pithampur Facility | Oral Solid Dosage Manufacturing & Packaging
+    https://www.piramalpharmasolutions.com/facilities/pithampur
+    Published : 
+    Highlight : Piramal Pharma Solutions - Pithampur Facility | Oral Solid Dosage Manufacturing & Packaging 
+
+ 
+
+arrow_back_ios_new
+
+arrow_forward_ios
+
+# Pithampur, India
+
+Piramal Pharma Limited Plot 67-70, sector II Pithampur, Indore, Madhya Pradesh 454775 (India)
+
+- Devi Ahilyabai Holkar Airport, Indore
+- Driving
+    Summary   : Summary:
+
+- Capabilities:
+  - Commercial manufacturing and packaging of oral solid dosage (OSD) forms (tablets and capsules) for clinical, pilot, and commercial scales.
+  - Capacity: 4.5 billion OSD units per year across three blocks.
+  - Additional packaging services for finished OSD products.
+
+- Certifications/regulatory accreditations:
+  - USFDA
+  - EU GMP
+  - Brazil Anvisa
+  - TGA Australia
+  
+
+[3] Primary & Secondary Packing | Ensera | Medical & Pharma Contract Packing
+    https://www.ensera.com/capabilities/primary-secondary-packing/
+    Published : 2024-11-01T00:00:00.000Z
+    Highlight : Primary & Secondary Packing | Ensera | Medical & Pharma Contract Packing
+
+SteriPack is now Ensera Read story
+
+# Primary and secondary packing
+
+We have over 25 years’ experience devising fast, customized packing solutions for some of the world’s most innovative pharmaceutical companies
+
+## A speciali
+    Summary   : Summary:
+
+Does this supplier match the spec?
+- Yes, for primary and secondary packing of complex drug delivery systems, with capabilities to assemble and package a wide range of products (inhalers, autoinjectors, pen injectors, vials, pre-filled syringes) and complementary kits.
+- They partner with fill/finish companies and handle complex requirements on behalf of pharmaceutical customers.
+- They 
+
+[4] Built on Service, Trust and Quality: How Alpex Pharma Became the Manufacturing Partner Pharma Brands Rely On - The Tribune
+    https://www.tribuneindia.com/news/business/built-on-service-trust-and-quality-how-alpex-pharma-became-the-manufacturing-partner-pharma-brands-rely-on/
+    Published : 2026-03-19T07:01:33.000Z
+    Highlight : Built on Service, Trust and Quality: How Alpex Pharma Became the Manufacturing Partner Pharma Brands Rely On - The Tribune 
+
+Subscribe To Print Edition About The Tribune Code Of Ethics Download App Careers Advertise with us Classifieds 
+
+MASTER AI WITH TRIBUNEA comprehensive AI Certification CourseE
+    Summary   : Summary:
+
+- Topic: Alpex Pharma is highlighted as a prominent contract manufacturing partner in India, emphasizing how contract manufacturers (CMOs) are central to the evolving pharmaceutical industry in India and globally.
+- Evidence of capabilities: The article positions Alpex Pharma as a key manufacturing partner trusted by pharma brands for service, trust, and quality. It implies strong emphas
+
+[5] OUR MANUFACTURING | Walter Healthcare [IN]
+    https://www.walterhealthcare.co.in/contract-manufacturing
+    Published : 
+    Highlight : OUR MANUFACTURING | Walter Healthcare
+
+top of page
+
+## CONTRACT MANUFACTURING / THIRD-PARTY
+
+## Made by Walter®
+
+##### Get a Quote within 15 mins
+
+Select a Service
+
+DRUG LIC. (Y/N)
+
+YES
+
+NO
+
+APPLIED
+
+GSTIN (Y/N)
+
+YES
+
+NO
+
+APPLIED
+
+Request a Quote
+
+Thanks for submitting!
+
+We will contact your shortly
+    Summary   : Summary:
+
+- Supplier: Walter Healthcare (Mohali, Punjab, India)
+- Capabilities:
+  - Contract manufacturing / third-party manufacturing for pharmaceutical formulations
+  - State-of-the-art facility with capability to produce a wide range of dosage forms
+  - In-house packaging and labeling
+  - Focus on compliance with GMP and WHO-GMP for clinical manufacturing
+  - CMC guidance understood for success
+
+[6] Sterile Oncology & High-Potency Manufacturing in India | Teyro Labs India
+    https://teyro.com/manufacturing/
+    Published : 2025-03-20T15:51:19.000Z
+    Highlight : Sterile Oncology & High-Potency Manufacturing in India | Teyro Labs India
+
+- Home
+- Our Capabilities
+- Manufacturing
+
+## Sterile & Non-sterile Oncology & High Potent Manufacturing
+
+Our facility is a globally recognized manufacturer of injectable and solid oral dosage (OSD) oncology products, approve
+    Summary   : Summary:
+
+- Capabilities evidenced:
+  - Sterile and non-sterile oncology manufacturing for injectable and solid oral dosage (OSD) products.
+  - High-potent/semis strong containment operations using advanced isolator technology and Closed Restricted Access Barrier System (cRABS).
+  - Compliance with stringent international regulatory standards in manufacturing.
+
+- Certifications/regulatory credibil
+
+[7] About Us – Eqova Medicare [IN]
+    https://www.eqova.in/about-us/
+    Published : 
+    Highlight : About Us – Eqova Medicare
+
+# About Us
+
+# Innovating Pharma, Transforming Healthcare
+
+At EQOVA Medicare, we bring expertise to pharmaceutical manufacturing, with over 500 approved products and 50 CTD dossiers to our name. Our cutting-edge facilities integrate ERP and LIMS systems to ensure precision 
+    Summary   : Summary:
+
+- Capabilities:
+  - Pharmaceutical manufacturing expertise with 500+ approved products and 50 CTD dossiers.
+  - Specializes in formulations, contract manufacturing, and product innovation.
+  - Advanced operations integrating ERP and LIMS for precision and efficiency.
+
+- Certifications:
+  - Strives for EU-GMP accreditation (aims to achieve European good manufacturing practices).
+
+- Geogra
+
+[8] Automatic Blister Packing Machine in Mumbai  Packa... | Jicon Technologies Pvt Ltd -  Chandigarh [IN]
+    https://www.jicon.in/chandigarh/latest-update/automatic-blister-packing-machine-in-mumbai-packa/128
+    Published : 
+    Highlight : Automatic Blister Packing Machine in Mumbai Packa... | Jicon Technologies Pvt Ltd - Chandigarh
+
+62e37142725a650001e90cb6
+
+JICONTECHNOLOGIESPVTLTD4A40
+
+62e37142725a650001e90cb6
+
+JICONTECHNOLOGIESPVTLTD4A40
+
+products
+
+68179d65be22ee500d53ff54
+
+Jicon Technologies Pvt Ltd
+
++919167992017
+
+Chat with us
+
+C
+    Summary   : Summary:
+
+- Supplier: Jicon Technologies Pvt Ltd (Chandigarh-based; listing references to Mumbai market)
+- Capabilities evidenced:
+  - Products: High-speed automatic blister packing machines; tablet blister packaging machines; alu blister packaging machines; blister sealing machines.
+  - Focus on packaging machinery, specifically automatic blister packing equipment.
+- Certifications: No certificat
+
+── DELTA SUMMARY ───────────────────────────────────────────────────────────
+Serper results          : 10
+Exa results             : 8
+Serper unique domains   : 10
+Exa unique domains      : 8
+Serper 'Missing:' hits  : 0  (across 10 results)
+Serper non-English TLDs : 0
+Exa non-English TLDs    : 3
+
+MANUAL CHECK REQUIRED:
+  Count candidates meeting ALL THREE dimensions (capability + cert + geography)
+  Serper ≤1 qualifying | Exa ≥3 qualifying = PASS for this spec
