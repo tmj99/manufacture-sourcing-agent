@@ -12,9 +12,13 @@ Strategic sourcing is *concept search*, not entity search. The query is a capabi
 |---|---|
 | **Google (Serper)** | Same query, keyword search. Results flagged when the supplier's domain is outside the target geography — the visible failure of keyword matching on capability queries. |
 | **Exa neural search** | Same query, semantic retrieval. Returns spec-matching candidates including non-English-primary suppliers Google misses. |
-| **Exa sourcing agent** | Decomposes the spec into capability sub-queries, fans out through Exa, verifies each candidate against its own domain, and returns a structured shortlist with sourced evidence per supplier — the deliverable a consultant hands to a client. |
+| **Exa sourcing agent** | Decomposes the spec into capability sub-queries (geography-anchored), fans out through Exa, verifies each candidate against its own domain, and returns a structured shortlist with confidence labels, sourced certifications, and analyst gaps. |
 
 All three columns receive the exact same input. Queries are shown verbatim above each column.
+
+## Batch mode
+
+A subtle **"↓ Batch mode"** toggle sits below the form. Clicking it switches to a batch view where up to 5 sourcing specs run in parallel — matching the production shape of an engagement kickoff where a consultant processes a full category brief at once. Results appear as a discovery grid across all specs simultaneously (~5–8 seconds). Click **"← Single spec"** to return to the three-column view.
 
 ## Environment variables
 
@@ -35,7 +39,10 @@ npm run dev
 
 Open `http://localhost:3000`. Use one of the three preset buttons to fill the form, then click **Find suppliers**.
 
-**Expected timing:** left and center columns return in ~3–5 seconds; the right column (agent) takes ~20–40 seconds and shows a live step indicator while it works.
+**Expected timing:**
+- Left and center columns: ~3–5 seconds
+- Right column (agent): ~20–40 seconds — shows a live step indicator while working
+- Batch mode (5 specs): ~5–8 seconds
 
 ## Deploy (Vercel)
 
@@ -43,12 +50,12 @@ Open `http://localhost:3000`. Use one of the three preset buttons to fill the fo
 git push
 ```
 
-Set the three env vars in the Vercel dashboard. The agent route exports `maxDuration = 60` to raise the serverless function timeout above the default 10s.
+Set the three env vars in the Vercel dashboard. The agent route exports `maxDuration = 60` and the batch route `maxDuration = 30` to raise serverless function timeouts above the default.
 
 ## Cost
 
-All three services offer free tiers sufficient for demo use:
-- **Exa** — ~1k requests/month free; `search()` ≈ $7/1k
+All three services have free tiers sufficient for demo use:
+- **Exa** — ~1k requests/month free; `search()` ≈ $7/1k. Single-spec run uses ~15 calls; batch (5 specs) uses ~50.
 - **Serper** — 2,500 free credits
 - **Anthropic** — pay-as-you-go; Haiku is ~$0.001/agent run
 
