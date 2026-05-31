@@ -61,3 +61,26 @@ export interface SourceResponse {
   exa_raw: ExaRawData | null;
   agent: AgentData | null;
 }
+
+// ── Batch mode (Phase 10) ─────────────────────────────────────────────────────
+
+export interface BatchCandidate {
+  name: string;
+  url: string;
+  domain: string;
+  location: string;
+  description: string; // Websets' relevance note for this company
+}
+
+export interface BatchSpecResult {
+  spec: string;
+  geography: string;
+  websetId: string;
+  status: "completed" | "timeout" | "error";
+  candidates: BatchCandidate[];
+  error?: string;
+}
+
+export interface BatchResponse {
+  results: BatchSpecResult[];
+}

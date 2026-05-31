@@ -6,6 +6,7 @@ import { GoogleColumn } from "@/app/components/GoogleColumn";
 import { ExaRawColumn } from "@/app/components/ExaRawColumn";
 import { AgentColumn } from "@/app/components/AgentColumn";
 import { AgentProgress } from "@/app/components/AgentProgress";
+import { BatchPanel } from "@/app/components/BatchPanel";
 import { type Anchor } from "@/app/lib/schema";
 import { type GoogleData, type ExaRawData, type AgentData } from "@/app/lib/types";
 
@@ -16,6 +17,7 @@ export default function Home() {
   const [exaRawData, setExaRawData] = useState<ExaRawData | null>(null);
   const [agentData, setAgentData] = useState<AgentData | null>(null);
   const [hasResult, setHasResult] = useState(false);
+  const [batchMode, setBatchMode] = useState(false);
   // Increment on each submit to reset the AgentProgress timer.
   const submissionId = useRef(0);
   const [submissionKey, setSubmissionKey] = useState(0);
@@ -55,16 +57,20 @@ export default function Home() {
       .catch(() => setAgentLoading(false));
   }
 
+  if (batchMode) {
+    return <BatchPanel onExit={() => setBatchMode(false)} />;
+  }
+
   return (
     <div className="min-h-screen bg-zinc-50">
       {/* Header */}
       <header className="border-b border-zinc-200 bg-white px-6 py-4">
         <div className="mx-auto max-w-7xl">
           <h1 className="text-base font-semibold text-zinc-900">
-            Strategic sourcing — supplier discovery &amp; capability verification
+            Manufacture Sourcing Agent
           </h1>
           <p className="mt-0.5 text-xs text-zinc-500">
-            All three columns receive the same input. Queries shown verbatim.
+            Supplier Discovery &amp; Capability Verification
           </p>
         </div>
       </header>
@@ -72,6 +78,14 @@ export default function Home() {
       {/* Form */}
       <div className="mx-auto max-w-2xl px-6 py-8">
         <SpecForm onSubmit={handleSubmit} loading={loading} />
+        {/* Batch mode toggle — intentionally subtle */}
+        <button
+          type="button"
+          onClick={() => setBatchMode(true)}
+          className="mt-2 text-xs text-zinc-300 hover:text-zinc-400"
+        >
+          ↓ Batch mode
+        </button>
       </div>
 
       {/* Results */}
