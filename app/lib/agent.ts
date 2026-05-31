@@ -11,17 +11,19 @@ const MODEL = "claude-haiku-4-5-20251001";
 
 // ── Zod schema for synthesis output ─────────────────────────────────────────
 
+// .catch() on every field so a null/wrong-type value from the model uses the
+// fallback instead of throwing — the whole parse no longer fails on one bad field.
 const shortlistEntrySchema = z.object({
-  supplierName: z.string(),
-  primaryDomain: z.string(),
-  headquartersGuess: z.string(),
-  capabilitiesMatched: z.array(z.string()),
-  certificationsFound: z.array(z.string()),
-  customerReferencesFound: z.array(z.string()),
-  languageOfEvidence: z.string(),
-  sourceUrls: z.array(z.string()),
-  matchConfidence: z.enum(["high", "moderate", "low"]),
-  gaps: z.array(z.string()),
+  supplierName: z.string().catch(""),
+  primaryDomain: z.string().catch(""),
+  headquartersGuess: z.string().catch(""),
+  capabilitiesMatched: z.array(z.string()).catch([]),
+  certificationsFound: z.array(z.string()).catch([]),
+  customerReferencesFound: z.array(z.string()).catch([]),
+  languageOfEvidence: z.string().catch(""),
+  sourceUrls: z.array(z.string()).catch([]),
+  matchConfidence: z.enum(["high", "moderate", "low"]).catch("low"),
+  gaps: z.array(z.string()).catch([]),
 });
 
 const shortlistSchema = z.object({ shortlist: z.array(shortlistEntrySchema) });
@@ -272,16 +274,29 @@ Return JSON:
           {
             role: "user",
             content: retry
-              ? `${userPrompt}\n\nReturn valid JSON only.`
+              ? `${userPrompt}\n\nReturn valid JSON only. No markdown, no explanation.`
               : userPrompt,
           },
+          // Prefill the assistant turn — forces the model to start directly with JSON
+          // and eliminates any preamble that would break JSON.parse.
+          { role: "assistant", content: '{"shortlist":[' },
         ],
       });
-      const text =
+      const completion =
         msg.content[0].type === "text" ? msg.content[0].text : "";
-      const parsed = JSON.parse(extractJson(text));
-      return shortlistSchema.parse(parsed).shortlist;
-    } catch {
+      // Reconstruct the full JSON by prepending the prefill we sent.
+      const fullText = '{"shortlist":[' + completion;
+      const parsed = JSON.parse(fullText);
+      // Accept both { shortlist: [...] } and [...] in case the model closed early.
+      const arr: unknown[] = Array.isArray(parsed)
+        ? parsed
+        : Array.isArray(parsed?.shortlist)
+        ? parsed.shortlist
+        : null!;
+      if (!arr) return null;
+      return shortlistSchema.parse({ shortlist: arr }).shortlist;
+    } catch (err) {
+      console.error(`[agent] synthesize(retry=${retry}) failed:`, err);
       return null;
     }
   }
